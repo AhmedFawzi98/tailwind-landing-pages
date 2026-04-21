@@ -3,10 +3,119 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./css/styles.css" />
-        <title>Clipboard</title>
+        <title>Clipboard App</title>
     </head>
     <body>
-        <h1 class="bg-red-400 font-bold">test</h1>
+        <section id="section-hero" class="mb-40">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon-large mx-auto my-16 stroke-strongCyan"
+                viewBox="0 0 512 512"
+            >
+                <path
+                    d="M336 64h32a48 48 0 0148 48v320a48 48 0 01-48 48H144a48 48 0 01-48-48V112a48 48 0 0148-48h32"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                    fill="none"
+                />
+                <rect
+                    x="176"
+                    y="32"
+                    width="160"
+                    height="64"
+                    rx="26.13"
+                    ry="26.13"
+                    fill="none"
+                    stroke-linejoin="round"
+                    stroke-width="32"
+                />
+            </svg>
+            <h1>a history of everything you copy</h1>
+            <p class="max-w-3xl mx-auto mb-10 text-2xl text-grayishBlue">
+                Clipboard allows you to track everything you copy. Instantly
+                access your clipboard on all of your devices
+            </p>
+            <div class="btn-container">
+                <a href="#" class="btn btn-primary w-full">
+                    download for mac
+                </a>
+                <a href="#" class="btn btn-secondary w-full">
+                    download for windows
+                </a>
+            </div>
+        </section>
+        <section id="section-snippets" class="mb-10">
+            <h2>keep track of your snippets</h2>
+            <p
+                class="max-w-3xl mx-auto md:text-xl mb-20 text-grayishBlue text-center leading-relaxed"
+            >
+                Clipboard stores everything you copy in the cloud, so you never
+                lose important text, links, or code snippets again. Switch
+                between all of your devices and everything stays organized and
+                easily accessible. It makes it simple to pick up where you left
+                off without breaking your workflow.
+            </p>
+        </section>
+        <section
+            id="section-features"
+            class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center justify-items-center mb-40"
+        >
+            <h2 class="sr-only">Features</h2>
+            <div class="mx-auto max-w-md lg:max-w-lg aspect-[188/143]">
+                <img
+                    src="./images/image-computer.png"
+                    alt="an image of a computer"
+                    class="w-full h-full object-cover"
+                />
+            </div>
+            <div class="space-y-6 lg:space-y-12">
+                <div class="max-w-sm mx-auto text-center lg:text-left">
+                    <h3>Quick Search</h3>
+                    <p class="text-grayishBlue text-lg lg:text-xl">
+                        Easily search your snippets by content, category,
+                        application, and more.
+                    </p>
+                </div>
+                <div class="max-w-sm mx-auto text-center lg:text-left">
+                    <h3>iCloud Sync</h3>
+                    <p class="text-grayishBlue text-lg lg:text-xl">
+                        Instantly save and sync snippets across all of your
+                        devices.
+                    </p>
+                </div>
+                <div class="max-w-sm mx-auto text-center lg:text-left">
+                    <h3>complety History</h3>
+                    <p class="text-grayishBlue text-lg lg:text-xl">
+                        Access all of your snippets from the first time you used
+                        the app.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-access" class="mb-40">
+            <div class="text-center">
+                <h2>access clipboard anywhere</h2>
+                <p class="mb-16 text-grayishBlue leading-relaxed">
+                    Access all of your clipboard snippets anywhere, from any
+                    device, and at anytime!
+                </p>
+            </div>
+
+            <div class="mx-auto max-w-2xl aspect-[905/575]">
+                <img
+                    src="./images/image-devices.png"
+                    alt="an image of a different devices"
+                    class="w-full h-full object-contain"
+                />
+            </div>
+        </section>
     </body>
 </html>
