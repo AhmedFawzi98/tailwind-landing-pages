@@ -29,7 +29,11 @@ Each project focuses on clean layout, responsive design (mobile-first approach),
 
 ### 1. Clipboard
 
+A clean, responsive landing page for a clipboard app, showcasing key features with clear layout, balanced typography, and minimal interactivity.
+
 #### Live demo
+
+https://clipboardapp-fawzi.netlify.app/
 
 ---
 
