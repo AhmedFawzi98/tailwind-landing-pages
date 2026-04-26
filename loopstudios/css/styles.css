@@ -16,16 +16,16 @@
         @apply font-bold capitalize;
     }
     h1 {
-        @apply mb-8 text-4xl md:text-5xl text-darkGrayishBlue uppercase;
+        @apply mb-8 text-4xl md:text-5xl text-black uppercase;
     }
     h2 {
-        @apply mb-6 text-3xl md:text-4xl text-darkGrayishBlue;
+        @apply mb-6 text-3xl md:text-4xl  text-black;
     }
     h3 {
-        @apply mb-2 text-xl lg:text-2xl text-darkGrayishBlue;
+        @apply mb-2 text-xl lg:text-2xl  text-black;
     }
     section {
-        @apply max-w-7xl mx-auto text-center px-10 py-16;
+        @apply text-center;
     }
 }
 
@@ -43,15 +43,48 @@
         @apply px-6 py-3 inline-block capitalize cursor-pointer font-semibold rounded-3xl transition-all duration-300 hover:shadow-md hover:shadow-black/10 active:translate-y-1 active:shadow-none;
     }
     .btn-primary {
-        @apply text-white bg-strongCyan  hover:opacity-80;
+        @apply text-white bg-red-500  hover:opacity-80;
     }
     .btn-secondary {
-        @apply text-white bg-lightBlue  hover:opacity-80;
+        @apply text-white bg-red-500  hover:opacity-80;
     }
     .btn-container {
         @apply max-w-sm md:max-w-xl mx-auto flex flex-col md:flex-row justify-center items-center gap-2 text-xl;
     }
     .hover-link {
-        @apply hover:text-strongCyan transition-colors duration-300;
+        @apply hover:text-red-500 transition-colors duration-300;
+    }
+
+    .link-underline {
+        @apply relative 
+           after:content-[''] 
+           after:absolute 
+           after:left-0 
+           after:-bottom-1 
+           after:h-[0.1rem]
+           after:w-full 
+           after:bg-blue-100
+           after:scale-x-0 
+           after:origin-left 
+           after:transition-transform 
+           after:duration-300 
+           after:ease-in-out;
+    }
+
+    .link-underline:hover {
+        @apply after:scale-x-100;
+    }
+}
+
+#section-hero {
+    background-image: url(../images/mobile/image-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 48em) {
+    #section-hero {
+        background-image: url(../images/desktop/image-hero.jpg);
     }
 }
