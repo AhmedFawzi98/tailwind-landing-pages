@@ -40,16 +40,13 @@
         @apply w-8 h-8;
     }
     .btn {
-        @apply px-6 py-3 inline-block capitalize cursor-pointer font-semibold rounded-3xl transition-all duration-300 hover:shadow-md hover:shadow-black/10 active:translate-y-1 active:shadow-none;
+        @apply px-6 py-3 inline-block capitalize cursor-pointer font-semibold transition-all duration-500 hover:shadow-md hover:shadow-black/10 active:shadow-none;
     }
     .btn-primary {
-        @apply text-white bg-red-500  hover:opacity-80;
+        @apply text-white bg-black  hover:opacity-80;
     }
     .btn-secondary {
-        @apply text-white bg-red-500  hover:opacity-80;
-    }
-    .btn-container {
-        @apply max-w-sm md:max-w-xl mx-auto flex flex-col md:flex-row justify-center items-center gap-2 text-xl;
+        @apply text-black bg-white hover:bg-black hover:text-white border-2 border-black hover:border-white;
     }
     .hover-link {
         @apply hover:text-red-500 transition-colors duration-300;
@@ -73,6 +70,28 @@
 
     .link-underline:hover {
         @apply after:scale-x-100;
+    }
+    .gallery-img-container {
+        @apply relative aspect-[654/240] md:aspect-[256/450] overflow-hidden;
+    }
+    .gallery-img {
+        @apply w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110;
+    }
+    .gallery-img-caption {
+        @apply absolute px-4 bottom-4 md:bottom-6 w-full md:w-4/5 text-3xl text-white text-center md:text-left transition-all duration-300 group-hover:text-black group-hover:scale-105;
+    }
+
+    .img-with-gradient {
+        @apply relative
+            after:content-['']
+            after:absolute
+            after:inset-0
+            after:bg-gradient-to-b
+            after:from-transparent
+            after:to-gray-400
+            after:hover:from-gray-50
+            after:hover:to-white
+            after:hover:opacity-20;
     }
 }
 
