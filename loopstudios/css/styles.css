@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :where(button, a, input, textarea, select):focus-visible {
+        @apply outline-none ring-2 ring-gray-500 ring-offset-2 ring-offset-white;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-bold capitalize;
+    }
+    h1 {
+        @apply mb-8 text-4xl md:text-5xl text-darkGrayishBlue uppercase;
+    }
+    h2 {
+        @apply mb-6 text-3xl md:text-4xl text-darkGrayishBlue;
+    }
+    h3 {
+        @apply mb-2 text-xl lg:text-2xl text-darkGrayishBlue;
+    }
+    section {
+        @apply max-w-7xl mx-auto text-center px-10 py-16;
+    }
+}
+
+@layer components {
+    .icon-large {
+        @apply w-32 h-32;
+    }
+    .icon-medium {
+        @apply w-16 h-16;
+    }
+    .icon-small {
+        @apply w-8 h-8;
+    }
+    .btn {
+        @apply px-6 py-3 inline-block capitalize cursor-pointer font-semibold rounded-3xl transition-all duration-300 hover:shadow-md hover:shadow-black/10 active:translate-y-1 active:shadow-none;
+    }
+    .btn-primary {
+        @apply text-white bg-strongCyan  hover:opacity-80;
+    }
+    .btn-secondary {
+        @apply text-white bg-lightBlue  hover:opacity-80;
+    }
+    .btn-container {
+        @apply max-w-sm md:max-w-xl mx-auto flex flex-col md:flex-row justify-center items-center gap-2 text-xl;
+    }
+    .hover-link {
+        @apply hover:text-strongCyan transition-colors duration-300;
+    }
+}
