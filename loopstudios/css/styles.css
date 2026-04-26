@@ -39,6 +39,9 @@
     .icon-small {
         @apply w-8 h-8;
     }
+    .logo {
+        @apply w-48 h-8;
+    }
     .btn {
         @apply px-6 py-3 inline-block capitalize cursor-pointer font-semibold transition-all duration-500 hover:shadow-md hover:shadow-black/10 active:shadow-none;
     }
@@ -49,7 +52,7 @@
         @apply text-black bg-white hover:bg-black hover:text-white border-2 border-black hover:border-white;
     }
     .hover-link {
-        @apply hover:text-red-500 transition-colors duration-300;
+        @apply hover:text-red-800 transition-colors duration-300;
     }
 
     .link-underline {
@@ -71,6 +74,11 @@
     .link-underline:hover {
         @apply after:scale-x-100;
     }
+
+    .hover-link {
+        @apply transition-colors duration-300 hover:text-red-600;
+    }
+
     .gallery-img-container {
         @apply relative aspect-[654/240] md:aspect-[256/450] overflow-hidden;
     }
@@ -78,7 +86,7 @@
         @apply w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-110;
     }
     .gallery-img-caption {
-        @apply absolute px-4 bottom-4 md:bottom-6 w-full md:w-4/5 text-3xl text-white text-center md:text-left transition-all duration-300 group-hover:text-black group-hover:scale-105;
+        @apply absolute px-4 bottom-4 md:bottom-6 w-full md:w-4/5 text-3xl text-white text-center md:text-left transition-all duration-300 group-hover:text-red-800 group-hover:scale-105;
     }
 
     .img-with-gradient {
@@ -88,7 +96,7 @@
             after:inset-0
             after:bg-gradient-to-b
             after:from-transparent
-            after:to-gray-400
+            after:to-gray-500
             after:hover:from-gray-50
             after:hover:to-white
             after:hover:opacity-20;
