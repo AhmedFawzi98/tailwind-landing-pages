@@ -16,13 +16,13 @@
         @apply font-bold capitalize;
     }
     h1 {
-        @apply mb-8 text-4xl md:text-5xl text-black uppercase;
+        @apply mb-8 text-4xl md:text-5xl uppercase;
     }
     h2 {
-        @apply mb-6 text-3xl md:text-4xl  text-black;
+        @apply mb-6 text-3xl md:text-4xl;
     }
     h3 {
-        @apply mb-2 text-xl lg:text-2xl  text-black;
+        @apply mb-2 text-xl lg:text-2xl;
     }
     section {
         @apply text-center;
