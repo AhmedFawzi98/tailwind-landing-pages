@@ -39,7 +39,11 @@ https://clipboardapp-fawzi.netlify.app/
 
 ### 2. Loopstudios
 
+A modern, responsive landing page for a VR company, featuring a bold hero section, layered content blocks, an interactive image gallery, and an animated hamburger menu. It emphasizes immersive visuals, strong typography, and interactive hover/click states to highlight creations and experiences.
+
 #### Live demo
+
+https://loopstudios-fawzi.netlify.app/
 
 ---
 
