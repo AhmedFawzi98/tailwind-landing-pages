@@ -16,10 +16,10 @@
         @apply font-bold capitalize;
     }
     h1 {
-        @apply mb-8 text-4xl md:text-5xl uppercase;
+        @apply mb-8 text-4xl lg:text-4xl xl:text-5xl uppercase;
     }
     h2 {
-        @apply mb-6 text-3xl md:text-4xl;
+        @apply mb-6 text-3xl lg:text-4xl;
     }
     h3 {
         @apply mb-2 text-xl lg:text-2xl;
@@ -29,6 +29,9 @@
     }
     a {
         @apply capitalize;
+    }
+    p {
+        @apply text-lg lg:text-xl text-grayishViolet;
     }
 }
 
@@ -55,11 +58,15 @@
     .btn-secondary {
         @apply text-black bg-white hover:bg-grayishVioletLight hover:text-white;
     }
+    .btn-container {
+        @apply flex flex-col md:flex-row justify-center items-center gap-2 text-xl;
+    }
+
     .hover-link {
         @apply transition-colors duration-300 hover:text-cyan;
     }
 
-    .nav-open .btn-container {
+    .nav-open .main-nav-btn-container {
         @apply flex flex-col justify-center items-center gap-4 text-xl;
     }
 
@@ -85,7 +92,7 @@
         .main-nav-list {
             @apply visible flex flex-row gap-8 static min-h-fit bg-transparent opacity-100 transition-none transform-none pointer-events-auto;
         }
-        .btn-container {
+        .main-nav-btn-container {
             @apply flex flex-row justify-center items-center gap-4 text-xl;
         }
     }

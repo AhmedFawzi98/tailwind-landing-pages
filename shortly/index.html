@@ -18,12 +18,10 @@
         <title>Shortly</title>
     </head>
     <body class="font-sans">
-        <section id="section-header" class="mb-20">
+        <section id="section-header" class="mb-30 lg:mb-40">
             <header>
                 <nav class="px-8 py-4">
-                    <div
-                        class="flex flex-col md:flex-row items-center justify-between lg:gap-6"
-                    >
+                    <div class="flex flex-row items-center justify-between">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             class="logo text-black"
@@ -40,7 +38,7 @@
                             <li><a href="#" class="hover-link">features</a></li>
                             <li><a href="#" class="hover-link">pricing</a></li>
                             <li class="lg:ml-auto">
-                                <div class="btn-container text-md">
+                                <div class="main-nav-btn-container text-md">
                                     <a href="#" class="btn btn-primary"
                                         >sign up</a
                                     >
@@ -90,6 +88,32 @@
                     </div>
                 </nav>
             </header>
+        </section>
+        <section id="section-hero" class="mb-40">
+            <div
+                class="px-8 py-4 flex flex-col-reverse lg:flex-row items-center gap-8 lg:justify-between lg:gap-0"
+            >
+                <div
+                    class="max-w-2xl flex flex-col lg:flex-1 lg:basis-1/2 text-center lg:text-left"
+                >
+                    <h1>shorter links, and more!</h1>
+                    <p class="mb-5">
+                        Shorten your links in seconds and track their
+                        performance with ease, all in one simple and streamlined
+                        experience.
+                    </p>
+                    <div class="btn-container lg:justify-start">
+                        <a href="#" class="btn btn-primary">get started</a>
+                    </div>
+                </div>
+                <div class="lg:flex-1 lg:basis-1/2">
+                    <img
+                        src="./images/illustration-working.svg"
+                        alt="an illustration of a woman sitting on desk with computer on"
+                        class="w-full h-full object-contain"
+                    />
+                </div>
+            </div>
         </section>
     </body>
 </html>
