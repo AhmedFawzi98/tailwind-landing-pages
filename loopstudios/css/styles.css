@@ -4,7 +4,7 @@
 
 @layer base {
     :where(button, a, input, textarea, select):focus-visible {
-        @apply outline-none ring-2 ring-gray-500 ring-offset-2 ring-offset-white;
+        @apply outline-none ring-2 ring-red-500 ring-offset-2 ring-offset-transparent;
     }
 
     h1,
@@ -51,9 +51,6 @@
     .btn-secondary {
         @apply text-black bg-white hover:bg-black hover:text-white border-2 border-black hover:border-white;
     }
-    .hover-link {
-        @apply hover:text-red-800 transition-colors duration-300;
-    }
 
     .link-underline {
         @apply relative 
@@ -76,7 +73,7 @@
     }
 
     .hover-link {
-        @apply transition-colors duration-300 hover:text-red-600;
+        @apply transition-colors duration-300 hover:text-red-800;
     }
 
     .gallery-img-container {
@@ -100,6 +97,47 @@
             after:hover:from-gray-50
             after:hover:to-white
             after:hover:opacity-20;
+    }
+
+    /* hamburger nav */
+    .hamburger-btn {
+        @apply relative z-50 cursor-pointer;
+    }
+    .hamburger-btn-icon {
+        @apply inline;
+    }
+    .hamburger-btn-icon-close {
+        @apply hidden;
+    }
+    .nav-open .hamburger-btn-icon {
+        @apply hidden;
+    }
+    .nav-open .hamburger-btn-icon-close {
+        @apply inline;
+    }
+
+    .main-nav-list {
+        @apply invisible opacity-0 absolute inset-0 bg-black  pointer-events-none;
+        transition:
+            opacity 500ms ease,
+            transform 500ms ease,
+            visibility 0ms linear 500ms;
+        transform: translateY(-20rem);
+    }
+
+    .nav-open .main-nav-list {
+        @apply visible flex flex-col justify-center items-center gap-12 min-h-screen opacity-100 pointer-events-auto z-40 text-xl;
+        transition:
+            opacity 500ms ease,
+            transform 500ms ease;
+        transform: translateY(0);
+    }
+
+    @media (min-width: 48em) {
+        .nav-open .main-nav-list,
+        .main-nav-list {
+            @apply visible flex flex-row gap-8 static min-h-fit bg-transparent opacity-100 transition-none transform-none pointer-events-auto;
+        }
     }
 }
 

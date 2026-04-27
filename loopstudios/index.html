@@ -11,13 +11,17 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./css/styles.css" />
+
+        <script defer src="./js/script.js"></script>
+
         <title>Loopstudios</title>
     </head>
     <body class="font-sans">
         <section class="mb-40" id="section-hero">
             <h1 class="sr-only">Loopstudios: an immersive experience</h1>
-            <div class="mx-auto px-12 py-12 text-white">
+            <div class="relative mx-auto px-12 py-12 text-white">
                 <nav
+                    id="main-nav"
                     class="flex flex-row items-center justify-between font-bold"
                 >
                     <a>
@@ -29,7 +33,7 @@
                             />
                         </svg>
                     </a>
-                    <ul class="hidden md:flex md:gap-8 font-alata md:text-xl">
+                    <ul class="main-nav-list font-alata md:text-xl">
                         <li>
                             <a href="#" class="link-underline">About</a>
                         </li>
@@ -45,11 +49,45 @@
                         <li>
                             <a href="#" class="link-underline">Support</a>
                         </li>
-                        <!--to do: hamburger button-->
                     </ul>
+                    <div class="md:hidden">
+                        <button
+                            class="hamburger-btn"
+                            aria-label="toggle navigation menu"
+                            aria-controls="header-nav"
+                            aria-expanded="false"
+                        >
+                            <svg
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="icon-small hamburger-btn-icon"
+                                viewBox="0 0 512 512"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-miterlimit="10"
+                                    stroke-width="32"
+                                    d="M80 160h352M80 256h352M80 352h352"
+                                />
+                            </svg>
+                            <svg
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="icon-small hamburger-btn-icon-close"
+                                viewBox="0 0 512 512"
+                            >
+                                <path
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="32"
+                                    d="M368 368L144 144M368 144L144 368"
+                                />
+                            </svg>
+                        </button>
+                    </div>
                 </nav>
-                <!--to do: hamburger menu-->
-
                 <div
                     class="max-w-sm sm:max-w-lg my-40 mx-auto md:mx-0 p-4 md:p-8 text-3xl sm:text-5xl md:text-6xl border-2 border-white uppercase text-white text-center md:text-left"
                 >
