@@ -4,7 +4,7 @@
 
 @layer base {
     :where(button, a, input, textarea, select):focus-visible {
-        @apply outline-none ring-2 ring-red-500 ring-offset-2 ring-offset-transparent;
+        @apply outline-none ring-2 ring-cyan ring-offset-2 ring-offset-cyanLight;
     }
 
     h1,
@@ -27,6 +27,9 @@
     section {
         @apply text-center;
     }
+    a {
+        @apply capitalize;
+    }
 }
 
 @layer components {
@@ -42,16 +45,64 @@
     .logo {
         @apply w-48 h-8;
     }
+
     .btn {
-        @apply px-6 py-3 inline-block capitalize cursor-pointer font-semibold transition-all duration-500 hover:shadow-md hover:shadow-black/10 active:shadow-none;
+        @apply px-8 py-3 inline-block capitalize cursor-pointer rounded-3xl font-semibold transition-all duration-500 hover:shadow-md hover:shadow-black/10 active:shadow-none;
     }
     .btn-primary {
-        @apply text-white bg-black  hover:opacity-80;
+        @apply text-white bg-cyan  hover:bg-cyanDark;
     }
     .btn-secondary {
-        @apply text-black bg-white hover:bg-black hover:text-white border-2 border-black hover:border-white;
+        @apply text-black bg-white hover:bg-grayishVioletLight hover:text-white;
     }
     .hover-link {
-        @apply transition-colors duration-300 hover:text-red-800;
+        @apply transition-colors duration-300 hover:text-cyan;
+    }
+
+    .nav-open .btn-container {
+        @apply flex flex-col justify-center items-center gap-4 text-xl;
+    }
+
+    .main-nav-list {
+        @apply invisible opacity-0 absolute inset-0 bg-black  pointer-events-none;
+        transition:
+            opacity 500ms ease,
+            transform 500ms ease,
+            visibility 0ms linear 500ms;
+        transform: translateY(-20rem);
+    }
+
+    .nav-open .main-nav-list {
+        @apply visible flex flex-col justify-center items-center gap-12 min-h-screen opacity-100 pointer-events-auto z-40 text-xl;
+        transition:
+            opacity 500ms ease,
+            transform 500ms ease;
+        transform: translateY(0);
+    }
+
+    @media (min-width: 64em) {
+        .nav-open .main-nav-list,
+        .main-nav-list {
+            @apply visible flex flex-row gap-8 static min-h-fit bg-transparent opacity-100 transition-none transform-none pointer-events-auto;
+        }
+        .btn-container {
+            @apply flex flex-row justify-center items-center gap-4 text-xl;
+        }
+    }
+
+    .hamburger-btn {
+        @apply relative z-50 cursor-pointer;
+    }
+    .hamburger-btn-icon {
+        @apply inline;
+    }
+    .hamburger-btn-icon-close {
+        @apply hidden;
+    }
+    .nav-open .hamburger-btn-icon {
+        @apply hidden;
+    }
+    .nav-open .hamburger-btn-icon-close {
+        @apply inline;
     }
 }
