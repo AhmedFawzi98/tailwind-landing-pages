@@ -46,7 +46,13 @@
         @apply w-16 h-16;
     }
     .icon-small {
-        @apply w-8 h-8;
+        @apply w-11 h-11;
+    }
+    .icon-wrapper {
+        @apply max-w-fit rounded-full bg-darkViolet;
+    }
+    .icon-small-wrapper {
+        @apply p-4;
     }
     .logo {
         @apply w-48 h-8;
@@ -68,8 +74,11 @@
     .hover-link {
         @apply transition-colors duration-300 hover:text-cyan;
     }
+    .card {
+        @apply rounded-lg bg-white shadow-md shadow-black/20 p-4;
+    }
     .link-card {
-        @apply flex flex-col items-center justify-center gap-4 md:flex-row md:justify-between md:gap-0 p-4 rounded-lg bg-white shadow-md shadow-black/20;
+        @apply flex flex-col items-center justify-center gap-4 md:flex-row md:justify-between md:gap-0;
     }
     .link-card .original-url,
     .link-card .shortened-url {
@@ -84,7 +93,16 @@
     .link-card div {
         @apply flex flex-col md:flex-row items-center gap-2 md:gap-4;
     }
+    .stats-card {
+        @apply flex flex-col justify-center items-center z-10;
+    }
+    .stats-card p {
+        @apply max-w-md md:max-w-full text-sm md:text-base;
+    }
 
+    .linking-border {
+        @apply border-l-8 md:border-l-0 md:border-t-8  border-cyan absolute top-0 bottom-0 left-1/2 md:left-0 md:right-0 md:top-1/2;
+    }
     .nav-open .main-nav-btn-container {
         @apply flex flex-col justify-center items-center gap-4 text-xl;
     }
