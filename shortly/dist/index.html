@@ -49,7 +49,7 @@
             <div class="px-8 py-4 flex flex-col-reverse lg:flex-row items-center gap-8 lg:justify-between lg:gap-0">
                 <div class="max-w-2xl flex flex-col lg:flex-1 lg:basis-1/2 text-center lg:text-left">
                     <h1>shorter links, and more!</h1>
-                    <p class="mb-5">
+                    <p class="mb-5 text-lg lg:text-xl">
                         Shorten your links in seconds and track their
                         performance with ease, all in one simple and streamlined
                         experience.
@@ -60,6 +60,57 @@
                 </div>
                 <div class="lg:flex-1 lg:basis-1/2">
                     <img src="/illustration-working.3cbcdaa9.svg" alt="an illustration of a woman sitting on desk with computer on" class="w-full h-full object-contain">
+                </div>
+            </div>
+        </section>
+        <section id="section-shorten" class="bg-gray-100 mb-40 p-10">
+            <div class="max-w-6xl mx-auto p-4 space-y-6">
+                <form id="link-form" class="relative flex flex-col md:flex-row gap-4 p-4 md:p-10 bg-darkViolet rounded-lg">
+                    <input id="url" name="url" type="url" placeholder="enter a link to shorten" class="flex-1 border-2 placeholder-grayishViolet placeholder:text-center text-sm md:text-base">
+                    <button type="submit" class="btn btn-primary">
+                        shorten
+                    </button>
+                </form>
+                <div class="flex flex-col gap-2 justify-center">
+                    <div class="link-card">
+                        <p class="original-url">
+                            <span class="sr-only">original url</span>
+                            https://developer.mozilla.org/en-US/docs/Web/CSS
+                        </p>
+                        <div>
+                            <p class="shortened-url">
+                                <span class="sr-only">shortened url</span>
+                                https://shrt.ly/X7mP4b
+                            </p>
+                            <button class="btn btn-primary">copy</button>
+                        </div>
+                    </div>
+                    <div class="link-card">
+                        <p class="original-url">
+                            <span class="sr-only">original url</span>
+                            https://www.example.com/blog/how-to-build-scalable-systems
+                        </p>
+                        <div>
+                            <p class="shortened-url">
+                                <span class="sr-only">shortened url</span>
+                                https://shrt.ly/3fK9xA
+                            </p>
+                            <button class="btn btn-primary">copy</button>
+                        </div>
+                    </div>
+                    <div class="link-card">
+                        <p class="original-url">
+                            <span class="sr-only">original url</span>
+                            https://www.nationalgeographic.com/travel/article/best-hidden-beaches-europe
+                        </p>
+                        <div>
+                            <p class="shortened-url">
+                                <span class="sr-only">shortened url</span>
+                                https://shrt.ly/B7nQ4p
+                            </p>
+                            <button class="btn btn-primary">copy</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

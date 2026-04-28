@@ -16,7 +16,7 @@
         @apply font-bold capitalize;
     }
     h1 {
-        @apply mb-8 text-4xl lg:text-4xl xl:text-5xl uppercase;
+        @apply mb-8 text-3xl lg:text-4xl xl:text-5xl uppercase;
     }
     h2 {
         @apply mb-6 text-3xl lg:text-4xl;
@@ -31,7 +31,10 @@
         @apply capitalize;
     }
     p {
-        @apply text-lg lg:text-xl text-grayishViolet;
+        @apply text-grayishViolet;
+    }
+    input {
+        @apply rounded-lg p-2;
     }
 }
 
@@ -50,7 +53,7 @@
     }
 
     .btn {
-        @apply px-8 py-3 inline-block capitalize cursor-pointer rounded-3xl font-semibold transition-all duration-500 hover:shadow-md hover:shadow-black/10 active:shadow-none;
+        @apply px-8 py-3 inline-block capitalize cursor-pointer rounded-lg font-semibold transition-all duration-500 hover:shadow-md hover:shadow-black/10 active:shadow-none;
     }
     .btn-primary {
         @apply text-white bg-cyan  hover:bg-cyanDark;
@@ -64,6 +67,22 @@
 
     .hover-link {
         @apply transition-colors duration-300 hover:text-cyan;
+    }
+    .link-card {
+        @apply flex flex-col items-center justify-center gap-4 md:flex-row md:justify-between md:gap-0 p-4 rounded-lg bg-white shadow-md shadow-black/20;
+    }
+    .link-card .original-url,
+    .link-card .shortened-url {
+        @apply text-sm lg:text-base xl:text-lg text-center md:text-left break-all;
+    }
+    .link-card .original-url {
+        @apply md:max-w-[50%];
+    }
+    .link-card .shortened-url {
+        @apply font-semibold;
+    }
+    .link-card div {
+        @apply flex flex-col md:flex-row items-center gap-2 md:gap-4;
     }
 
     .nav-open .main-nav-btn-container {
