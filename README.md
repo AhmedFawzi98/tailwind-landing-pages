@@ -49,7 +49,11 @@ https://loopstudios-fawzi.netlify.app/
 
 ### 3. Shortly
 
+A responsive and visually structured URL shortening landing page that explores more advanced layout techniques, including an intentionally offset statistics section for a dynamic, non-linear feel. The design focuses on cohesive color theming, extensive use of illustrations, and balanced spacing. With a lightweight interactive navigation experience with an animated hamburger menu.
+
 #### Live demo
+
+https://shortly-fawzi.netlify.app/
 
 ---
 
