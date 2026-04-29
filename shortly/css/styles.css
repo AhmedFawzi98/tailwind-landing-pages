@@ -61,6 +61,9 @@
     .btn {
         @apply px-8 py-3 inline-block capitalize cursor-pointer rounded-lg font-semibold transition-all duration-500 hover:shadow-md hover:shadow-black/10 active:shadow-none;
     }
+    .nav-open .btn {
+        @apply w-full text-center;
+    }
     .btn-primary {
         @apply text-white bg-cyan  hover:bg-cyanDark;
     }
@@ -70,6 +73,7 @@
     .btn-container {
         @apply flex flex-col md:flex-row justify-center items-center gap-2 text-xl;
     }
+
     .hover-link {
         @apply transition-colors duration-300 hover:text-cyan;
     }
@@ -116,34 +120,27 @@
     }
 
     .main-nav-list {
-        @apply invisible opacity-0 absolute inset-0 bg-black  pointer-events-none;
+        @apply invisible opacity-0 fixed inset-0 bg-black pointer-events-none;
         transition:
-            opacity 500ms ease,
-            transform 500ms ease,
-            visibility 0ms linear 500ms;
+            opacity 800ms ease,
+            transform 800ms ease,
+            visibility 0ms linear 800ms;
         transform: translateY(-20rem);
     }
 
     .nav-open .main-nav-list {
-        @apply visible flex flex-col justify-center items-center gap-12 min-h-screen opacity-100 pointer-events-auto z-40 text-xl;
+        @apply visible flex flex-col justify-center items-center gap-12 min-h-screen opacity-100 pointer-events-auto z-40 text-xl bg-darkViolet  text-whiteViolet;
         transition:
-            opacity 500ms ease,
-            transform 500ms ease;
+            opacity 800ms ease,
+            transform 800ms ease;
         transform: translateY(0);
-    }
-
-    @media (min-width: 64em) {
-        .nav-open .main-nav-list,
-        .main-nav-list {
-            @apply visible flex flex-row gap-8 static min-h-fit bg-transparent opacity-100 transition-none transform-none pointer-events-auto;
-        }
-        .main-nav-btn-container {
-            @apply flex flex-row justify-center items-center gap-4 text-xl;
-        }
     }
 
     .hamburger-btn {
         @apply relative z-50 cursor-pointer;
+    }
+    .nav-open .hamburger-btn {
+        @apply fixed right-4 top-4;
     }
     .hamburger-btn-icon {
         @apply inline;
@@ -156,6 +153,26 @@
     }
     .nav-open .hamburger-btn-icon-close {
         @apply inline;
+    }
+
+    @media (min-width: 64em) {
+        .nav-open .btn {
+            @apply w-auto;
+        }
+
+        .nav-open .main-nav-list,
+        .main-nav-list {
+            @apply visible flex flex-row flex-1 gap-8 items-center static bg-transparent opacity-100 transition-none transform-none pointer-events-auto text-2xl font-medium text-veryDarkViolet;
+        }
+
+        .nav-open .main-nav-btn-container,
+        .main-nav-btn-container {
+            @apply flex flex-row justify-center items-center gap-4 text-xl;
+        }
+
+        .nav-open .hamburger-btn {
+            @apply relative z-50 cursor-pointer;
+        }
     }
 
     #section-footer h3 {

@@ -380,6 +380,11 @@ input {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.nav-open .btn {
+  text-align: center;
+  width: 100%;
+}
+
 .btn-primary {
   --tw-bg-opacity: 1;
   background-color: hsl(180 66% 49% / var(--tw-bg-opacity, 1));
@@ -577,8 +582,8 @@ input {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
   opacity: 0;
-  transition: opacity .5s, transform .5s, visibility 0s linear .5s;
-  position: absolute;
+  transition: opacity .8s, transform .8s, visibility 0s linear .8s;
+  position: fixed;
   inset: 0;
   transform: translateY(-20rem);
 }
@@ -587,49 +592,33 @@ input {
   pointer-events: auto;
   visibility: visible;
   z-index: 40;
+  --tw-bg-opacity: 1;
+  background-color: hsl(257 27% 26% / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  min-height: 100vh;
+  color: hsl(257 10% 85% / var(--tw-text-opacity, 1));
   opacity: 1;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  min-height: 100vh;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  transition: opacity .5s, transform .5s;
+  transition: opacity .8s, transform .8s;
   display: flex;
   transform: translateY(0);
-}
-
-@media (width >= 64em) {
-  .nav-open .main-nav-list, .main-nav-list {
-    pointer-events: auto;
-    visibility: visible;
-    opacity: 1;
-    background-color: #0000;
-    flex-direction: row;
-    gap: 2rem;
-    min-height: fit-content;
-    transition-property: none;
-    display: flex;
-    position: static;
-    transform: none;
-  }
-
-  .main-nav-btn-container {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    display: flex;
-  }
 }
 
 .hamburger-btn {
   z-index: 50;
   cursor: pointer;
   position: relative;
+}
+
+.nav-open .hamburger-btn {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
 }
 
 .hamburger-btn-icon {
@@ -642,6 +631,48 @@ input {
 
 .nav-open .hamburger-btn-icon-close {
   display: inline;
+}
+
+@media (width >= 64em) {
+  .nav-open .btn {
+    width: auto;
+  }
+
+  .nav-open .main-nav-list, .main-nav-list {
+    pointer-events: auto;
+    visibility: visible;
+    --tw-text-opacity: 1;
+    color: hsl(260 8% 14% / var(--tw-text-opacity, 1));
+    opacity: 1;
+    background-color: #0000;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    transition-property: none;
+    display: flex;
+    position: static;
+    transform: none;
+  }
+
+  .nav-open .main-nav-btn-container, .main-nav-btn-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    display: flex;
+  }
+
+  .nav-open .hamburger-btn {
+    z-index: 50;
+    cursor: pointer;
+    position: relative;
+  }
 }
 
 #section-footer h3 {
@@ -687,20 +718,8 @@ input {
   margin-bottom: 1.25rem;
 }
 
-.mr-2 {
-  margin-right: .5rem;
-}
-
-.mb-2 {
-  margin-bottom: .5rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
+.mr-8 {
+  margin-right: 2rem;
 }
 
 .flex {
@@ -768,6 +787,10 @@ input {
   justify-content: space-between;
 }
 
+.gap-1 {
+  gap: .25rem;
+}
+
 .gap-16 {
   gap: 4rem;
 }
@@ -782,10 +805,6 @@ input {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-1 {
-  gap: .25rem;
 }
 
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
@@ -839,9 +858,9 @@ input {
   padding-right: 2rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py-4 {
@@ -852,11 +871,6 @@ input {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .pb-32 {
@@ -875,11 +889,6 @@ input {
   font-family: Poppins, sans-serif;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -890,10 +899,6 @@ input {
   line-height: 1.25rem;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
@@ -902,6 +907,11 @@ input {
 .text-cyan {
   --tw-text-opacity: 1;
   color: hsl(180 66% 49% / var(--tw-text-opacity, 1));
+}
+
+.text-grayishVioletDark {
+  --tw-text-opacity: 1;
+  color: hsl(257 7% 39% / var(--tw-text-opacity, 1));
 }
 
 .text-veryDarkBlue {
@@ -917,11 +927,6 @@ input {
 .text-whiteViolet {
   --tw-text-opacity: 1;
   color: hsl(257 10% 85% / var(--tw-text-opacity, 1));
-}
-
-.text-grayishVioletDark {
-  --tw-text-opacity: 1;
-  color: hsl(257 7% 39% / var(--tw-text-opacity, 1));
 }
 
 .placeholder-grayishViolet::placeholder {
@@ -962,28 +967,16 @@ input {
     gap: 0;
   }
 
-  .md\:gap-16 {
-    gap: 4rem;
-  }
-
-  .md\:gap-8 {
-    gap: 2rem;
+  .md\:gap-12 {
+    gap: 3rem;
   }
 
   .md\:gap-2 {
     gap: .5rem;
   }
 
-  .md\:gap-24 {
-    gap: 6rem;
-  }
-
-  .md\:gap-32 {
-    gap: 8rem;
-  }
-
-  .md\:gap-12 {
-    gap: 3rem;
+  .md\:gap-8 {
+    gap: 2rem;
   }
 
   .md\:p-10 {
