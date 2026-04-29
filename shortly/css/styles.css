@@ -43,19 +43,19 @@
         @apply w-32 h-32;
     }
     .icon-medium {
-        @apply w-16 h-16;
+        @apply w-12 h-12;
     }
     .icon-small {
-        @apply w-11 h-11;
+        @apply w-8 h-8;
     }
     .icon-wrapper {
         @apply max-w-fit rounded-full bg-darkViolet;
     }
     .icon-small-wrapper {
-        @apply p-4;
+        @apply p-5;
     }
     .logo {
-        @apply w-48 h-8;
+        @apply w-[7.5rem] h-8;
     }
 
     .btn {
@@ -70,10 +70,10 @@
     .btn-container {
         @apply flex flex-col md:flex-row justify-center items-center gap-2 text-xl;
     }
-
     .hover-link {
         @apply transition-colors duration-300 hover:text-cyan;
     }
+
     .card {
         @apply rounded-lg bg-white shadow-md shadow-black/20 p-4;
     }
@@ -99,10 +99,18 @@
     .stats-card p {
         @apply max-w-md md:max-w-full text-sm md:text-base;
     }
-
     .linking-border {
         @apply border-l-8 md:border-l-0 md:border-t-8  border-cyan absolute top-0 bottom-0 left-1/2 md:left-0 md:right-0 md:top-1/2;
     }
+
+    #section-CTA {
+        background-image: url("../images/bg-cta.svg");
+        background-color: theme(colors.darkViolet);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
     .nav-open .main-nav-btn-container {
         @apply flex flex-col justify-center items-center gap-4 text-xl;
     }
@@ -148,5 +156,13 @@
     }
     .nav-open .hamburger-btn-icon-close {
         @apply inline;
+    }
+
+    #section-footer h3 {
+        @apply text-whiteViolet;
+    }
+
+    #section-footer a {
+        @apply hover:text-cyan;
     }
 }
