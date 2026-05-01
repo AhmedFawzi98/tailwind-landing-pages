@@ -36,6 +36,9 @@
     .logo {
         @apply w-48 h-14;
     }
+    .icon-large {
+        @apply w-24 h-20;
+    }
     .icon-medium {
         @apply w-16 h-16;
     }
