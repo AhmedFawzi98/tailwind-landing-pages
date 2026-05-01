@@ -45,12 +45,14 @@
     .icon-small {
         @apply w-6 h-6;
     }
-
+    .icon-colored {
+        @apply text-accentBlue dark:text-accentCyan;
+    }
     .btn {
         @apply px-6 py-3 inline-block capitalize cursor-pointer font-semibold rounded-lg transition-all duration-300 hover:shadow-md hover:shadow-black/10 active:shadow-none;
     }
     .btn-primary {
-        @apply text-white bg-accentBlue hover:opacity-80;
+        @apply text-white bg-accentBlue dark:bg-accentCyan hover:opacity-80;
     }
     .btn-secondary {
         @apply text-white hover:opacity-80;
@@ -59,7 +61,7 @@
         @apply max-w-sm md:max-w-xl mx-auto flex flex-col md:flex-row justify-center items-center gap-2 text-xl;
     }
     .hover-link {
-        @apply hover:text-accentCyan dark:hover:text-accentBlue transition-colors duration-300;
+        @apply hover:text-accentBlue dark:hover:text-accentCyan transition-colors duration-300;
     }
 
     .background {
