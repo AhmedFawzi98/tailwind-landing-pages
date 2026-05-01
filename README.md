@@ -65,7 +65,11 @@ https://shortly-fawzi.netlify.app/
 
 ### 5. Fylo
 
+A modern, responsive landing page with light and dark theme support, preserving user preference via local storage. The design emphasizes clarity and accessibility, with carefully balanced contrast, clean typography, and shadows used to make key elements standout. It features engaging illustrations, smooth layout behavior across screen sizes, and a polished UI that focuses on both usability and visual hierarchy.
+
 #### Live demo
+
+https://fylo-fawzi.netlify.app
 
 ---
 
