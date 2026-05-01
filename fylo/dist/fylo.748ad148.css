@@ -257,16 +257,15 @@ html {
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
   --tw-ring-opacity: 1;
-  --tw-ring-color: hsl(198 60% 50% / var(--tw-ring-opacity, 1));
+  --tw-ring-color: hsl(210 60% 40% / var(--tw-ring-opacity, 1));
   --tw-ring-offset-width: 2px;
-  --tw-ring-offset-color: #65e2d9;
+  --tw-ring-offset-color: transparent;
   outline: 2px solid #0000;
 }
 
 :where(button, a, input, textarea, select):focus-visible:is(.dark *) {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(107 114 128 / var(--tw-ring-opacity, 1));
-  --tw-ring-offset-color: #fff;
+  --tw-ring-color: hsl(190 68% 24% / var(--tw-ring-opacity, 1));
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -326,11 +325,6 @@ a {
 .icon-large {
   width: 6rem;
   height: 5rem;
-}
-
-.icon-medium {
-  width: 4rem;
-  height: 4rem;
 }
 
 .icon-small {
@@ -412,6 +406,7 @@ a {
 }
 
 .body-background {
+  background-color: #f3f4f6;
   background-image: url("bg-curvy-light-mode.37a94272.svg");
 }
 
@@ -438,6 +433,14 @@ a {
   padding: 0;
   position: absolute;
   overflow: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
 }
 
 .mx-auto {
@@ -467,14 +470,6 @@ a {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mb-2 {
-  margin-bottom: .5rem;
-}
-
-.mb-1 {
-  margin-bottom: .25rem;
 }
 
 .inline-block {
@@ -529,6 +524,15 @@ a {
   max-width: 20rem;
 }
 
+.max-w-sm {
+  max-width: 24rem;
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -539,6 +543,10 @@ a {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -581,14 +589,8 @@ a {
   border-radius: .5rem;
 }
 
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity, 1));
+.border-2 {
+  border-width: 2px;
 }
 
 .bg-gray-200 {
@@ -599,11 +601,6 @@ a {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
 .object-cover {
@@ -640,9 +637,17 @@ a {
   padding-right: 1.5rem;
 }
 
-.py-12 {
+.py-3 {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.pb-96 {
+  padding-bottom: 24rem;
+}
+
+.pt-12 {
   padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .text-center {
@@ -711,14 +716,24 @@ a {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.text-lightRed {
-  --tw-text-opacity: 1;
-  color: hsl(0 100% 63% / var(--tw-text-opacity, 1));
+.placeholder-gray-400::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-placeholder-opacity, 1));
 }
 
-.text-accentCyan {
-  --tw-text-opacity: 1;
-  color: hsl(176 68% 64% / var(--tw-text-opacity, 1));
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-black\/15 {
+  --tw-shadow-color: #00000026;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.placeholder\:text-center::placeholder {
+  text-align: center;
 }
 
 .hover\:bg-gray-100:hover {
@@ -757,8 +772,20 @@ a {
 }
 
 @media (width >= 768px) {
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .md\:mb-10 {
     margin-bottom: 2.5rem;
+  }
+
+  .md\:max-w-full {
+    max-width: 100%;
   }
 
   .md\:max-w-md {

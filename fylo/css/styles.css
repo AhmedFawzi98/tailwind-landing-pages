@@ -7,7 +7,7 @@
         @apply min-h-screen;
     }
     :where(button, a, input, textarea, select):focus-visible {
-        @apply outline-none ring-2 ring-accentBlue dark:ring-gray-500 ring-offset-2 ring-offset-accentCyan dark:ring-offset-white;
+        @apply outline-none ring-2 ring-accentBlue2 dark:ring-accentCyan2 ring-offset-2 ring-offset-transparent;
     }
 
     h1,
@@ -71,6 +71,7 @@
     }
     .body-background {
         background-image: url("../images/bg-curvy-light-mode.svg");
+        background-color: theme(colors.gray.100);
     }
     .dark .body-background {
         background-image: url("../images/bg-curvy-dark-mode.svg");
