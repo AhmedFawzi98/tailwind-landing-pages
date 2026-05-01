@@ -19,16 +19,13 @@
         @apply font-bold capitalize;
     }
     h1 {
-        @apply mb-8 text-4xl md:text-5xl text-red-500 uppercase;
+        @apply mb-8 text-3xl md:text-4xl uppercase;
     }
     h2 {
-        @apply mb-6 text-3xl md:text-4xl text-red-500;
+        @apply mb-6 text-3xl md:text-4xl;
     }
     h3 {
-        @apply mb-2 text-xl lg:text-2xl text-red-500;
-    }
-    section {
-        @apply max-w-7xl mx-auto text-center px-10 py-16;
+        @apply mb-2 text-xl lg:text-2xl;
     }
     a {
         @apply capitalize;
@@ -38,9 +35,6 @@
 @layer components {
     .logo {
         @apply w-48 h-14;
-    }
-    .icon-large {
-        @apply w-32 h-32;
     }
     .icon-medium {
         @apply w-16 h-16;
@@ -53,16 +47,16 @@
         @apply px-6 py-3 inline-block capitalize cursor-pointer font-semibold rounded-lg transition-all duration-300 hover:shadow-md hover:shadow-black/10 active:shadow-none;
     }
     .btn-primary {
-        @apply text-white bg-red-500  hover:opacity-80;
+        @apply text-white bg-accentBlue hover:opacity-80;
     }
     .btn-secondary {
-        @apply text-white bg-red-500  hover:opacity-80;
+        @apply text-white hover:opacity-80;
     }
     .btn-container {
         @apply max-w-sm md:max-w-xl mx-auto flex flex-col md:flex-row justify-center items-center gap-2 text-xl;
     }
     .hover-link {
-        @apply hover:text-accentCyan transition-colors duration-300;
+        @apply hover:text-accentCyan dark:hover:text-accentBlue transition-colors duration-300;
     }
 
     .background {

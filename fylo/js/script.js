@@ -6,7 +6,7 @@ const themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
 const themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
 const userTheme = localStorage.getItem("color-theme");
 const currentThemeIsDark = document.documentElement.classList.contains("dark");
-const isDark = userTheme === "dark" || (!userTheme && currentThemeIsDark);
+const isDark = userTheme === "dark";
 //on load
 setTheme(isDark);
 
