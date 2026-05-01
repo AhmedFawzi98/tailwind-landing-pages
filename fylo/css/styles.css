@@ -54,12 +54,6 @@
     .btn-primary {
         @apply text-white bg-accentBlue dark:bg-accentCyan hover:opacity-80;
     }
-    .btn-secondary {
-        @apply text-white hover:opacity-80;
-    }
-    .btn-container {
-        @apply max-w-sm md:max-w-xl mx-auto flex flex-col md:flex-row justify-center items-center gap-2 text-xl;
-    }
     .hover-link {
         @apply hover:text-accentBlue dark:hover:text-accentCyan transition-colors duration-300;
     }
@@ -80,7 +74,8 @@
     .logo-background {
         background-image: url("../images/logo-light-mode.svg");
     }
-    .dark .logo-background {
+    .dark .logo-background,
+    .logo-background-dark {
         background-image: url("../images/logo-dark-mode.svg");
     }
 }

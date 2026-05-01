@@ -419,7 +419,7 @@ a {
   background-image: url("logo-light-mode.199b3b32.svg");
 }
 
-.dark .logo-background {
+.dark .logo-background, .logo-background-dark {
   background-image: url("logo-dark-mode.99f20621.svg");
 }
 
@@ -464,28 +464,16 @@ a {
   margin-bottom: 1.25rem;
 }
 
+.mb-56 {
+  margin-bottom: 14rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mb-48 {
-  margin-bottom: 12rem;
-}
-
-.mb-52 {
-  margin-bottom: 13rem;
-}
-
-.mb-44 {
-  margin-bottom: 11rem;
-}
-
-.mb-56 {
-  margin-bottom: 14rem;
 }
 
 .inline-block {
@@ -581,6 +569,18 @@ a {
   justify-content: center;
 }
 
+.justify-items-center {
+  justify-items: center;
+}
+
+.gap-1 {
+  gap: .25rem;
+}
+
+.gap-2 {
+  gap: .5rem;
+}
+
 .gap-3 {
   gap: .75rem;
 }
@@ -611,6 +611,16 @@ a {
 
 .border-2 {
   border-width: 2px;
+}
+
+.bg-darkBlue2 {
+  --tw-bg-opacity: 1;
+  background-color: hsl(216 53% 9% / var(--tw-bg-opacity, 1));
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
 .bg-gray-200 {
@@ -657,24 +667,14 @@ a {
   padding-right: 1.5rem;
 }
 
-.py-3 {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
 .py-14 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
+}
+
+.py-3 {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
 }
 
 .pb-96 {
@@ -731,6 +731,11 @@ a {
   letter-spacing: .05em;
 }
 
+.text-darkBlue {
+  --tw-text-opacity: 1;
+  color: hsl(217 28% 15% / var(--tw-text-opacity, 1));
+}
+
 .text-darkBlue1 {
   --tw-text-opacity: 1;
   color: hsl(218 28% 13% / var(--tw-text-opacity, 1));
@@ -774,6 +779,11 @@ a {
 .hover\:bg-gray-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
+}
+
+.dark\:bg-darkBlue1:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: hsl(218 28% 13% / var(--tw-bg-opacity, 1));
 }
 
 .dark\:bg-darkBlue2:is(.dark *) {
@@ -851,6 +861,18 @@ a {
     gap: 0;
   }
 
+  .md\:gap-8 {
+    gap: 2rem;
+  }
+
+  .md\:justify-self-start {
+    justify-self: start;
+  }
+
+  .md\:justify-self-end {
+    justify-self: end;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -876,6 +898,14 @@ a {
 }
 
 @media (width >= 1024px) {
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
