@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="">
+<html lang="en" class="scroll-smooth">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,9 +29,15 @@
                         <ul
                             class="flex flex-row gap-6 items-center justify-center md:text-xl lg:text-2xl"
                         >
-                            <li><a href="#" class="hover-link">features</a></li>
                             <li>
-                                <a href="#" class="hover-link">testimonials</a>
+                                <a href="#features" class="hover-link"
+                                    >features</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#testimonials" class="hover-link"
+                                    >testimonials</a
+                                >
                             </li>
                         </ul>
                     </nav>
@@ -85,7 +91,7 @@
             </div>
         </header>
         <main>
-            <section class="hero mb-40">
+            <section id="hero" class="mb-40">
                 <div class="p-6 text-center">
                     <div class="max-w-xl mx-auto aspect-[720/534] mb-10">
                         <img
@@ -112,9 +118,9 @@
                     <a class="btn btn-primary px-12">get started</a>
                 </div>
             </section>
-            <section class="features mb-40">
+            <section id="features" class="mb-56">
                 <div
-                    class="grid grid-cols-1 md:grid-cols-2 gap-8 p-6 text-center"
+                    class="grid grid-cols-1 md:grid-cols-2 gap-8 px-6 py-14 text-center"
                 >
                     <h2 class="sr-only">features</h2>
 
@@ -337,7 +343,7 @@
                     </article>
                 </div>
             </section>
-            <section class="testimonials bg-gray-200 dark:bg-darkBlue2">
+            <section id="testimonials" class="bg-gray-200 dark:bg-darkBlue2">
                 <div class="px-6 pt-12 pb-96">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -496,6 +502,5 @@
                 </div>
             </section>
         </main>
-        <footer></footer>
     </body>
 </html>

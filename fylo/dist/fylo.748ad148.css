@@ -472,6 +472,22 @@ a {
   margin-top: auto;
 }
 
+.mb-48 {
+  margin-bottom: 12rem;
+}
+
+.mb-52 {
+  margin-bottom: 13rem;
+}
+
+.mb-44 {
+  margin-bottom: 11rem;
+}
+
+.mb-56 {
+  margin-bottom: 14rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -516,16 +532,16 @@ a {
   max-width: 28rem;
 }
 
+.max-w-sm {
+  max-width: 24rem;
+}
+
 .max-w-xl {
   max-width: 36rem;
 }
 
 .max-w-xs {
   max-width: 20rem;
-}
-
-.max-w-sm {
-  max-width: 24rem;
 }
 
 .-translate-y-1\/2 {
@@ -579,6 +595,10 @@ a {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded-full {
@@ -640,6 +660,21 @@ a {
 .py-3 {
   padding-top: .75rem;
   padding-bottom: .75rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 
 .pb-96 {
