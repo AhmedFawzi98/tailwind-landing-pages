@@ -20,9 +20,9 @@ mainNavList.addEventListener("click", (event) => {
 //------------------------------------------- tabbed component -------------------------------------------
 const tabsBtns = document.querySelectorAll(".tab");
 const tabPanels = document.querySelectorAll(".tab-panel");
-tabsBtns.forEach((tabBtn) => tabBtn.addEventListener("click", onTabClicked));
+tabsBtns.forEach((tabBtn) => tabBtn.addEventListener("click", onTabClick));
 
-function onTabClicked(clickEvent) {
+function onTabClick(clickEvent) {
     //select tab
     tabsBtns.forEach((tabBtn) => tabBtn.classList.remove("selected"));
     tabsBtns.forEach((tabBtn) => tabBtn.setAttribute("aria-selected", "false"));
@@ -35,4 +35,17 @@ function onTabClicked(clickEvent) {
     tabPanels.forEach((tabPanel) => tabPanel.classList.remove("selected"));
     const targetPanel = document.getElementById(targetPanelId);
     targetPanel.classList.add("selected");
+}
+
+//------------------------------------------- accordion -------------------------------------------
+const accordionBtns = document.querySelectorAll(".accordion-btn");
+accordionBtns.forEach((accordionBtn) =>
+    accordionBtn.addEventListener("click", onAccordionBtnClick),
+);
+
+function onAccordionBtnClick(clickEvent) {
+    const accordionBtn = clickEvent.currentTarget;
+    const accordionItem = accordionBtn.closest(".accordion-item");
+    const isExpanded = accordionItem.classList.toggle("expanded");
+    accordionBtn.setAttribute("aria-expanded", isExpanded ? "true" : "false");
 }

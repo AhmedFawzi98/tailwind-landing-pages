@@ -166,39 +166,46 @@
                         quickly and stay organized without effort.
                     </p>
                     <div id="features-tabbed-component" class="">
-                        <div class="tabs-container max-w-2xl mx-auto">
+                        <div
+                            role="tablist"
+                            class="tabs-container max-w-2xl mx-auto"
+                        >
                             <button
                                 role="tab"
-                                aria-controls="panel-1"
+                                aria-controls="tab-panel-1"
                                 aria-selected="true"
+                                id="tab-1"
                                 class="tab selected"
-                                data-target="panel-1"
+                                data-target="tab-panel-1"
                             >
                                 simple bookmarking
                             </button>
                             <button
                                 role="tab"
-                                aria-controls="panel-2"
+                                aria-controls="tab-panel-2"
                                 aria-selected="false"
+                                id="tab-2"
                                 class="tab"
-                                data-target="panel-2"
+                                data-target="tab-panel-2"
                             >
                                 quick searching
                             </button>
                             <button
                                 role="tab"
-                                aria-controls="panel-3"
+                                aria-controls="tab-panel-3"
                                 aria-selected="false"
+                                id="tab-3"
                                 class="tab"
-                                data-target="panel-3"
+                                data-target="tab-panel-3"
                             >
                                 easy sharing
                             </button>
                         </div>
                         <div class="max-w-7xl mx-auto">
                             <div
-                                id="panel-1"
+                                id="tab-panel-1"
                                 role="tabpanel"
+                                aria-labelledby="tab-1"
                                 class="tab-panel selected"
                             >
                                 <div class="w-96 aspect-[440/380]">
@@ -221,7 +228,12 @@
                                     </p>
                                 </div>
                             </div>
-                            <div id="panel-2" role="tabpanel" class="tab-panel">
+                            <div
+                                id="tab-panel-2"
+                                role="tabpanel"
+                                aria-labelledby="tab-2"
+                                class="tab-panel"
+                            >
                                 <div class="w-96 aspect-[440/380]">
                                     <img
                                         src="./images/illustration-features-tab-2.svg"
@@ -243,7 +255,12 @@
                                     </p>
                                 </div>
                             </div>
-                            <div id="panel-3" role="tabpanel" class="tab-panel">
+                            <div
+                                id="tab-panel-3"
+                                role="tabpanel"
+                                aria-labelledby="tab-3"
+                                class="tab-panel"
+                            >
                                 <div class="w-96 aspect-[440/380]">
                                     <img
                                         src="./images/illustration-features-tab-3.svg"
@@ -353,7 +370,198 @@
                 </div>
             </section>
 
-            <section></section>
+            <section id="faq" class="mb-40">
+                <div class="max-w-4xl mx-auto px-4 py-6">
+                    <h2>frequently asked questions</h2>
+                    <p
+                        class="max-w-lg mx-auto text-grayishBlue text-lg mb-10 leading-relaxed"
+                    >
+                        here are some frequently asked questions, please don't
+                        hesitate if you have any other questions, contact us at
+                        your convenience.
+                    </p>
+                    <div id="faq-accordion-component" class="md:text-left">
+                        <div id="mb-8" class="accordion-item">
+                            <h3 class="">
+                                <button
+                                    id="accordion-btn-1"
+                                    aria-controls="accordion-panel-1"
+                                    aria-expanded="true"
+                                    class="btn accordion-btn"
+                                >
+                                    <span>
+                                        01
+                                        <span class="font-normal ml-2">
+                                            what is bookmark and how does it
+                                            work?
+                                        </span>
+                                    </span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        class="icon-extra-small arrow-icon"
+                                    >
+                                        <path
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="3"
+                                            d="M1 1l8 8 8-8"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                            </h3>
+                            <div
+                                id="accordion-panel-1"
+                                aria-labelledby="accordion-btn-1"
+                                class="accordion-panel"
+                            >
+                                <p class="text-grayishBlue leading-relaxed">
+                                    Bookmark is a simple browser extension that
+                                    helps you save, organize, and access your
+                                    favorite websites in one place. With a
+                                    single click, you can store links, keep them
+                                    neatly structured, and retrieve them
+                                    instantly whenever you need them.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="mb-8" class="accordion-item">
+                            <h3 class="text-xs md:text-base lg:text-xl">
+                                <button
+                                    id="accordion-btn-2"
+                                    aria-controls="accordion-panel-2"
+                                    aria-expanded="false"
+                                    class="btn accordion-btn"
+                                >
+                                    <span>
+                                        02
+                                        <span class="font-normal ml-2">
+                                            is there a mobile version available?
+                                        </span>
+                                    </span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        class="icon-extra-small arrow-icon"
+                                    >
+                                        <path
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="3"
+                                            d="M1 1l8 8 8-8"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                            </h3>
+                            <div
+                                id="accordion-panel-2"
+                                aria-labelledby="accordion-btn-2"
+                                class="accordion-panel"
+                            >
+                                <p class="text-grayishBlue leading-relaxed">
+                                    Our extension is designed primarily for
+                                    desktop browsers, but you can still access
+                                    your bookmarks on mobile devices through
+                                    supported browsers and syncing features.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="mb-8" class="accordion-item">
+                            <h3 class="text-xs md:text-base lg:text-xl">
+                                <button
+                                    id="accordion-btn-3"
+                                    aria-controls="accordion-panel-3"
+                                    aria-expanded="false"
+                                    class="btn accordion-btn"
+                                >
+                                    <span>
+                                        03
+                                        <span class="font-normal ml-2">
+                                            can i sync my bookmarks across
+                                            devices?
+                                        </span>
+                                    </span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        class="icon-extra-small arrow-icon"
+                                    >
+                                        <path
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="3"
+                                            d="M1 1l8 8 8-8"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                            </h3>
+                            <div
+                                id="accordion-panel-3"
+                                aria-labelledby="accordion-btn-3"
+                                class="accordion-panel"
+                            >
+                                <p class="text-grayishBlue leading-relaxed">
+                                    Yes, your bookmarks are securely synced
+                                    across all your devices, so you can access
+                                    them anytime, anywhere without losing your
+                                    organization.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="mb-8" class="accordion-item">
+                            <h3 class="text-xs md:text-base lg:text-xl">
+                                <button
+                                    id="accordion-btn-4"
+                                    aria-controls="accordion-panel-4"
+                                    aria-expanded="false"
+                                    class="btn accordion-btn"
+                                >
+                                    <span>
+                                        04
+                                        <span class="font-normal ml-2">
+                                            how secure is my bookmark data?
+                                        </span>
+                                    </span>
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        class="icon-extra-small arrow-icon"
+                                    >
+                                        <path
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="3"
+                                            d="M1 1l8 8 8-8"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                            </h3>
+                            <div
+                                id="accordion-panel-4"
+                                aria-labelledby="accordion-btn-4"
+                                class="accordion-panel"
+                            >
+                                <p class="text-grayishBlue leading-relaxed">
+                                    We prioritize your privacy by keeping your
+                                    data secure and encrypted. Your bookmarks
+                                    are stored safely, and we never share your
+                                    information with third parties.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer></footer>
     </body>

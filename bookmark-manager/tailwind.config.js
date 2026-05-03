@@ -4,6 +4,7 @@ export default {
         extend: {
             colors: {
                 softBlue: "hsl(231, 69%, 60%)",
+                softBlueTent1: "hsl(231, 69%, 90%)",
                 softBlueShade1: "hsl(231, 69%, 40%)",
                 softBlueShade2: "hsl(231, 60%, 20%)",
                 softOrange: "hsl(25, 94%, 66%)",
