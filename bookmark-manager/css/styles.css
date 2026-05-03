@@ -7,16 +7,15 @@
         @apply outline-none ring-2 ring-red-500 ring-offset-2 ring-offset-transparent;
     }
 
-    h1,
     h2,
     h3,
     h4,
     h5,
     h6 {
-        @apply font-bold capitalize;
+        @apply font-semibold capitalize;
     }
     h1 {
-        @apply mb-8 text-4xl lg:text-5xl uppercase;
+        @apply mb-8 text-4xl lg:text-5xl uppercase font-bold;
     }
     h2 {
         @apply mb-6 text-3xl md:text-4xl;
@@ -34,7 +33,7 @@
 
 @layer components {
     .icon-large {
-        @apply w-32 h-32;
+        @apply w-28 h-28;
     }
     .icon-medium {
         @apply w-16 h-16;
@@ -55,7 +54,7 @@
         @apply text-white bg-softBlue  hover:bg-softBlueShade1;
     }
     .btn-secondary {
-        @apply text-white bg-softRed hover:bg-softRedShade1;
+        @apply text-white bg-softOrange hover:bg-softOrangeShade1;
     }
     .btn-container {
         @apply flex flex-col md:flex-row justify-center items-center gap-2 text-xl;
@@ -82,13 +81,21 @@
     }
 
     .hover-link {
-        @apply transition-colors duration-300 hover:text-softRed;
+        @apply transition-colors duration-300 hover:text-softOrange;
     }
 
     @media screen(lg) {
         .background-illustration {
             @apply absolute -z-10 w-[9999px] h-60 bg-softBlue;
         }
+    }
+
+    .card {
+        @apply p-4 rounded-lg bg-white shadow-lg shadow-black/10;
+    }
+
+    .card-hr-separator {
+        @apply w-full h-0.5 bg-grayishBlue;
     }
 }
 
@@ -155,10 +162,10 @@
 }
 
 .tab {
-    @apply p-4 md:text-lg text-center text-gray-600 hover:text-softRed capitalize transition-all;
+    @apply p-4 md:text-lg text-center text-gray-600 hover:text-softOrange capitalize transition-all;
 }
 .tab.selected {
-    @apply border-b-4 border-softRed -translate-y-1;
+    @apply border-b-4 border-softOrange -translate-y-1;
 }
 
 .tab-panel {
@@ -182,4 +189,9 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/*download*/
+.download-card {
+    @apply flex flex-col items-center justify-center text-sm lg:text-base xl:text-lg text-center gap-4 transition-transform hover:-translate-y-2 hover:shadow-black/20;
 }
