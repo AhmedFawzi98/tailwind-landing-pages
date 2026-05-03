@@ -16,7 +16,7 @@
         @apply font-bold capitalize;
     }
     h1 {
-        @apply mb-8 text-4xl md:text-5xl uppercase;
+        @apply mb-8 text-4xl lg:text-5xl uppercase;
     }
     h2 {
         @apply mb-6 text-3xl md:text-4xl;
@@ -43,7 +43,7 @@
         @apply w-8 h-8;
     }
     .logo {
-        @apply w-40 h-8 z-50;
+        @apply w-44 h-7 z-50;
     }
     .logo-text {
         @apply text-veryDarkBlue;
@@ -56,6 +56,9 @@
     }
     .btn-secondary {
         @apply text-white bg-softRed hover:bg-softRedShade1;
+    }
+    .btn-container {
+        @apply flex flex-col md:flex-row justify-center items-center gap-2 text-xl;
     }
 
     .link-underline {
@@ -80,6 +83,12 @@
 
     .hover-link {
         @apply transition-colors duration-300 hover:text-softRed;
+    }
+
+    @media screen(lg) {
+        .background-hero {
+            @apply absolute -z-10 left-[15%] bottom-[2%] w-[9999px] h-60 rounded-l-full bg-softBlue;
+        }
     }
 
     /* hamburger nav */
@@ -123,7 +132,7 @@
         transform: translateY(0);
     }
 
-    @media (min-width: 64em) {
+    @media screen(lg) {
         .nav-open .main-nav-list,
         .main-nav-list {
             @apply visible flex flex-row items-center justify-center gap-8 static min-h-fit bg-transparent opacity-100 transition-none transform-none pointer-events-auto text-xl text-veryDarkBlue;
