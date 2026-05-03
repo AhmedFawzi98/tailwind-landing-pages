@@ -116,16 +116,20 @@
             </div>
         </header>
         <main>
-            <section id="hero" class="mb-20">
+            <section id="hero" class="mb-40">
                 <div
                     class="py-6 px-16 flex flex-col lg:flex-row-reverse items-center gap-4 justify-center lg:justify-end"
                 >
                     <div class="relative aspect-[41/29] max-w-xl">
-                        <div class="background background-hero"></div>
+                        <div
+                            class="background-illustration rounded-l-full left-[15%] bottom-[2%]"
+                            aria-hidden="true"
+                        ></div>
                         <img
                             src="./images/illustration-hero.svg"
                             alt=""
                             class="w-full h-full object-contain"
+                            aria-hidden="true"
                         />
                     </div>
                     <div
@@ -143,6 +147,124 @@
                         <div class="btn-container text-lg">
                             <a class="btn btn-primary">get it on chrome</a>
                             <a class="btn btn-secondary">get it on firefox</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="features" class="mb-40">
+                <div class="relative py-6 px-16">
+                    <div
+                        class="background-illustration rounded-r-full right-[65%] bottom-0.5"
+                        aria-hidden="true"
+                    ></div>
+                    <h2>features</h2>
+                    <p
+                        class="max-w-md mx-auto text-grayishBlue mb-6 leading-relaxed"
+                    >
+                        Our aim is to make bookmark management simple and
+                        efficient, helping you access your favorite websites
+                        quickly and stay organized without effort.
+                    </p>
+                    <div id="features-tabbed-component" class="">
+                        <div class="tabs-container max-w-2xl mx-auto">
+                            <button
+                                role="tab"
+                                aria-controls="panel-1"
+                                aria-selected="true"
+                                class="tab selected"
+                                data-target="panel-1"
+                            >
+                                simple bookmarking
+                            </button>
+                            <button
+                                role="tab"
+                                aria-controls="panel-2"
+                                aria-selected="false"
+                                class="tab"
+                                data-target="panel-2"
+                            >
+                                quick searching
+                            </button>
+                            <button
+                                role="tab"
+                                aria-controls="panel-3"
+                                aria-selected="false"
+                                class="tab"
+                                data-target="panel-3"
+                            >
+                                easy sharing
+                            </button>
+                        </div>
+                        <div class="max-w-7xl mx-auto">
+                            <div
+                                id="panel-1"
+                                role="tabpanel"
+                                class="tab-panel selected"
+                            >
+                                <div class="w-96 aspect-[440/380]">
+                                    <img
+                                        src="./images/illustration-features-tab-1.svg"
+                                        alt=""
+                                        class="w-full h-full object-contain"
+                                        aria-hidden="true"
+                                    />
+                                </div>
+                                <div>
+                                    <h3 class="mb-6">bookmark in one click</h3>
+                                    <p
+                                        class="max-w-md mx-auto text-grayishBlue mb-6 leading-relaxed"
+                                    >
+                                        Organize your bookmarks effortlessly and
+                                        access them with a single click. Keep
+                                        everything in one place and enjoy a
+                                        smoother, faster browsing experience.
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="panel-2" role="tabpanel" class="tab-panel">
+                                <div class="w-96 aspect-[440/380]">
+                                    <img
+                                        src="./images/illustration-features-tab-2.svg"
+                                        alt=""
+                                        class="w-full h-full object-contain"
+                                        aria-hidden="true"
+                                    />
+                                </div>
+                                <div>
+                                    <h3 class="mb-6">intelligent search</h3>
+                                    <p
+                                        class="max-w-md mx-auto text-grayishBlue mb-6 leading-relaxed"
+                                    >
+                                        Quickly find saved sites with a powerful
+                                        search that understands what you’re
+                                        looking for. Filter, sort, and locate
+                                        your bookmarks instantly without digging
+                                        through lists.
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="panel-3" role="tabpanel" class="tab-panel">
+                                <div class="w-96 aspect-[440/380]">
+                                    <img
+                                        src="./images/illustration-features-tab-3.svg"
+                                        alt=""
+                                        class="w-full h-full object-contain"
+                                        aria-hidden="true"
+                                    />
+                                </div>
+
+                                <div>
+                                    <h3 class="mb-6">easy sharing</h3>
+                                    <p
+                                        class="max-w-md mx-auto text-grayishBlue mb-6 leading-relaxed"
+                                    >
+                                        Share your bookmarks and collections
+                                        with others in just a few clicks.
+                                        Collaborate with your team or send links
+                                        to friends without any hassle.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

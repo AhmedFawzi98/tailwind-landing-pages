@@ -86,65 +86,100 @@
     }
 
     @media screen(lg) {
-        .background-hero {
-            @apply absolute -z-10 left-[15%] bottom-[2%] w-[9999px] h-60 rounded-l-full bg-softBlue;
+        .background-illustration {
+            @apply absolute -z-10 w-[9999px] h-60 bg-softBlue;
         }
     }
+}
 
-    /* hamburger nav */
-    .hamburger-btn {
-        @apply relative z-50 cursor-pointer;
-    }
-    .hamburger-btn-icon {
-        @apply inline text-veryDarkBlue;
-    }
-    .hamburger-btn-icon-close {
-        @apply hidden;
-    }
-    .nav-open .hamburger-btn-icon {
-        @apply hidden;
-    }
-    .nav-open .hamburger-btn-icon-close {
-        @apply inline text-white;
+/* hamburger nav */
+.hamburger-btn {
+    @apply relative z-50 cursor-pointer;
+}
+.hamburger-btn-icon {
+    @apply inline text-veryDarkBlue;
+}
+.hamburger-btn-icon-close {
+    @apply hidden;
+}
+.nav-open .hamburger-btn-icon {
+    @apply hidden;
+}
+.nav-open .hamburger-btn-icon-close {
+    @apply inline text-white;
+}
+
+.nav-open .logo-text {
+    @apply text-white;
+}
+.nav-open .main-nav-btn-container {
+    @apply flex flex-col justify-center items-stretch text-center gap-4 text-xl;
+}
+
+.main-nav-list {
+    @apply invisible opacity-0 fixed inset-0 bg-softBlueShade2/70 backdrop-blur-sm pointer-events-none;
+    transition:
+        opacity 500ms ease,
+        transform 500ms ease,
+        visibility 0ms linear 500ms;
+    transform: translateY(-20rem);
+}
+
+.nav-open .main-nav-list {
+    @apply visible flex flex-col justify-center items-center gap-12 min-h-screen opacity-100 pointer-events-auto z-40 text-2xl text-white;
+    transition:
+        opacity 500ms ease,
+        transform 500ms ease;
+    transform: translateY(0);
+}
+
+@media screen(lg) {
+    .nav-open .main-nav-list,
+    .main-nav-list {
+        @apply visible flex flex-row items-center justify-center gap-8 static min-h-fit bg-transparent opacity-100 transition-none transform-none pointer-events-auto text-xl text-veryDarkBlue;
     }
 
     .nav-open .logo-text {
-        @apply text-white;
-    }
-    .nav-open .main-nav-btn-container {
-        @apply flex flex-col justify-center items-stretch text-center gap-4 text-xl;
+        @apply text-veryDarkBlue;
     }
 
-    .main-nav-list {
-        @apply invisible opacity-0 absolute inset-0 bg-softBlueShade2/70 backdrop-blur-sm pointer-events-none;
-        transition:
-            opacity 500ms ease,
-            transform 500ms ease,
-            visibility 0ms linear 500ms;
-        transform: translateY(-20rem);
+    .nav-open .main-nav-btn-container,
+    .main-nav-btn-container {
+        @apply flex flex-row justify-center items-center gap-4 text-xl;
     }
+}
 
-    .nav-open .main-nav-list {
-        @apply visible flex flex-col justify-center items-center gap-12 min-h-screen opacity-100 pointer-events-auto z-40 text-2xl text-white;
-        transition:
-            opacity 500ms ease,
-            transform 500ms ease;
+/* tabbed component */
+.tabs-container {
+    @apply flex flex-col md:flex-row items-center justify-center gap-4 md:justify-between md:gap-0 mb-16;
+}
+
+.tab {
+    @apply p-4 md:text-lg text-center text-gray-600 hover:text-softRed capitalize transition-all;
+}
+.tab.selected {
+    @apply border-b-4 border-softRed -translate-y-1;
+}
+
+.tab-panel {
+    @apply hidden;
+}
+.tab-panel.selected {
+    @apply p-4 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12;
+}
+
+.tab-panel.selected h3,
+.tab-panel.selected p {
+    animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
         transform: translateY(0);
-    }
-
-    @media screen(lg) {
-        .nav-open .main-nav-list,
-        .main-nav-list {
-            @apply visible flex flex-row items-center justify-center gap-8 static min-h-fit bg-transparent opacity-100 transition-none transform-none pointer-events-auto text-xl text-veryDarkBlue;
-        }
-
-        .nav-open .logo-text {
-            @apply text-veryDarkBlue;
-        }
-
-        .nav-open .main-nav-btn-container,
-        .main-nav-btn-container {
-            @apply flex flex-row justify-center items-center gap-4 text-xl;
-        }
     }
 }
