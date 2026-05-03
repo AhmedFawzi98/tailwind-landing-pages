@@ -53,6 +53,7 @@
     .logo-text {
         @apply text-veryDarkBlue;
     }
+
     .btn {
         @apply px-6 py-3 inline-block capitalize cursor-pointer rounded-lg font-semibold transition-all duration-300 hover:shadow-md hover:shadow-black/10 active:shadow-none;
     }
@@ -100,7 +101,7 @@
         @apply p-4 rounded-lg bg-white shadow-lg shadow-black/10;
     }
 
-    .card-hr-separator {
+    .hr-separator {
         @apply w-full h-0.5 bg-grayishBlue;
     }
 }
@@ -139,11 +140,15 @@
 }
 
 .nav-open .main-nav-list {
-    @apply visible flex flex-col justify-center items-center gap-12 min-h-screen opacity-100 pointer-events-auto z-40 text-2xl text-white;
+    @apply visible flex flex-col justify-center items-center gap-8 min-h-screen opacity-100 pointer-events-auto z-40 text-2xl text-white;
     transition:
         opacity 500ms ease,
         transform 500ms ease;
     transform: translateY(0);
+}
+
+.nav-open .main-nav-separator {
+    @apply block w-1/4 h-0.5 bg-grayishBlue;
 }
 
 @media screen(lg) {
@@ -159,6 +164,11 @@
     .nav-open .main-nav-btn-container,
     .main-nav-btn-container {
         @apply flex flex-row justify-center items-center gap-4 text-xl;
+    }
+
+    .nav-open .main-nav-separator,
+    .main-nav-separator {
+        @apply hidden;
     }
 }
 
