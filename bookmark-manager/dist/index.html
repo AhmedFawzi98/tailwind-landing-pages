@@ -1,72 +1,47 @@
-<!DOCTYPE html><html lang="en" class="scroll-smooth overflow-x-hidden"><head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="/favicon-32x32.654148d5.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&amp;display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/bookmark-manager.748ad148.css">
-
-        <script defer="" src="/bookmark-manager.1c974c2f.js"></script>
-
-        <title>Bookmark Manager</title>
-    </head>
-    <body class="font-sans overflow-x-hidden bg-gray-50">
-        <header id="header" class="mb-20">
-            <div class="p-6">
-                <nav id="main-nav" class="flex flex-row items-center justify-between text-veryDarkBlue font-medium">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="logo logo-text" id="logo">
-                        <g fill="none" fill-rule="evenodd">
-                            <path d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z" fill="currentColor" fill-rule="nonzero"></path>
-                            <g>
-                                <circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5"></circle>
-                                <path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#FFF"></path>
-                            </g>
-                        </g>
-                    </svg>
-                    <ul class="main-nav-list">
+<!DOCTYPE html><html lang=en class="overflow-x-hidden scroll-smooth"><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0"><link rel=icon href=/favicon-32x32.54eb69c1.png><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&amp;display=swap" rel=stylesheet><link rel=stylesheet href=/bookmark-manager.2053fb25.css><script defer src=/bookmark-manager.12eb9897.js></script><title>Bookmark Manager</title><body class="bg-gray-50 font-sans overflow-x-hidden">
+        <header id=header class=mb-20>
+            <div class=p-6>
+                <nav id=main-nav class="flex flex-row font-medium items-center justify-between text-veryDarkBlue">
+                    <svg xmlns:xmlns=http://www.w3.org/2000/svg id=logo class="logo logo-text"><g fill=none fill-rule=evenodd><path fill=currentColor fill-rule=nonzero d="M37 6.299h5.227q1.12 0 2.062.466.943.467 1.484 1.27c.541.803.542 1.12.542 1.754q0 1.008-.495 1.746t-1.297 1.129v.15q1.045.372 1.661 1.185.615.812.616 1.95 0 1.102-.588 1.951a3.8 3.8 0 0 1-1.587 1.307q-.998.457-2.212.457H37Zm5.04 5.45q.822 0 1.316-.457.495-.458.495-1.148 0-.672-.476-1.13-.477-.457-1.26-.457H39.52v3.192Zm.28 5.619q.915 0 1.428-.476t.513-1.241-.522-1.251q-.523-.486-1.494-.485H39.52v3.453Zm12.927 2.595q-1.96 0-3.556-.924a6.7 6.7 0 0 1-2.511-2.53q-.915-1.605-.915-3.528t.915-3.528a6.7 6.7 0 0 1 2.51-2.529Q53.288 6 55.248 6t3.556.924a6.7 6.7 0 0 1 2.51 2.53q.915 1.605.915 3.527t-.915 3.528a6.7 6.7 0 0 1-2.51 2.53q-1.597.924-3.556.924Zm0-2.39a4.5 4.5 0 0 0 2.258-.578 4.2 4.2 0 0 0 1.615-1.624q.588-1.046.588-2.39t-.588-2.389a4.2 4.2 0 0 0-1.615-1.624 4.5 4.5 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.2 4.2 0 0 0-1.605 1.624q-.588 1.045-.588 2.39 0 1.343.588 2.389a4.2 4.2 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578m15.353 2.39q-1.96 0-3.556-.924a6.7 6.7 0 0 1-2.51-2.53q-.915-1.605-.915-3.528t.914-3.528a6.7 6.7 0 0 1 2.511-2.529Q68.64 6 70.6 6t3.556.924a6.7 6.7 0 0 1 2.51 2.53q.915 1.605.915 3.527t-.914 3.528a6.7 6.7 0 0 1-2.511 2.53q-1.596.924-3.556.924m0-2.39a4.5 4.5 0 0 0 2.259-.578 4.2 4.2 0 0 0 1.614-1.624q.588-1.046.588-2.39t-.588-2.389a4.2 4.2 0 0 0-1.614-1.624 4.5 4.5 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.2 4.2 0 0 0-1.605 1.624q-.588 1.045-.588 2.39 0 1.343.588 2.389a4.2 4.2 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578M79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299ZM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483Zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781Zm3.193 7.859-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49ZM124.553 6h4.872q1.307 0 2.324.541a3.9 3.9 0 0 1 1.577 1.503q.56.96.56 2.175 0 1.287-.812 2.286a4.6 4.6 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52Zm4.853 6.03q.86 0 1.4-.523.542-.523.542-1.326 0-.765-.514-1.306t-1.39-.542h-2.371v3.696Zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52Z"/><circle cx=12.5 cy=12.5 r=12.5 fill=#5267df /><path fill=#fff d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2"/></g></svg>
+                    <ul class=main-nav-list>
                         <li>
-                            <a href="#features" class="hover-link tracking-widest">features</a>
+                            <a href=#features class="hover-link tracking-widest">features</a>
                         </li>
-                        <li class="main-nav-separator"></li>
+                        <li class=main-nav-separator></li>
                         <li>
-                            <a href="#download" class="hover-link tracking-widest">download</a>
+                            <a href=#download class="hover-link tracking-widest">download</a>
                         </li>
-                        <li class="main-nav-separator"></li>
+                        <li class=main-nav-separator></li>
                         <li>
-                            <a href="#faq" class="hover-link tracking-widest">FAQ</a>
+                            <a href=#faq class="hover-link tracking-widest">FAQ</a>
                         </li>
-                        <li class="main-nav-separator"></li>
+                        <li class=main-nav-separator></li>
                         <li>
                             <div class="main-nav-btn-container text-md">
-                                <a href="#" class="btn btn-primary">sign up</a>
-                                <a href="#" class="btn btn-secondary">login</a>
+                                <a href=# class="btn btn-primary">sign up</a>
+                                <a href=# class="btn btn-secondary">login</a>
                             </div>
                         </li>
                     </ul>
-                    <div class="lg:hidden">
-                        <button class="hamburger-btn" aria-label="toggle navigation menu" aria-controls="header-nav" aria-expanded="false">
-                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon-small hamburger-btn-icon" viewBox="0 0 512 512">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"></path>
-                            </svg>
-                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon-small hamburger-btn-icon-close" viewBox="0 0 512 512">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"></path>
-                            </svg>
+                    <div class=lg:hidden>
+                        <button class=hamburger-btn aria-label="toggle navigation menu" aria-controls=header-nav aria-expanded=false>
+                            <svg xmlns:xmlns=http://www.w3.org/2000/svg aria-hidden=true class="hamburger-btn-icon icon-small" viewBox="0 0 512 512"><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=32 d="M80 160h352M80 256h352M80 352h352"/></svg>
+                            <svg xmlns:xmlns=http://www.w3.org/2000/svg aria-hidden=true class="hamburger-btn-icon-close icon-small" viewBox="0 0 512 512"><path stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=32 d="M368 368 144 144m224 0L144 368"/></svg>
                         </button>
                     </div>
                 </nav>
             </div>
         </header>
         <main>
-            <section id="hero" class="mb-40">
-                <div class="py-6 px-16 flex flex-col lg:flex-row-reverse items-center gap-4 justify-center lg:justify-end">
-                    <div class="relative aspect-[41/29] max-w-xl">
-                        <div class="background-illustration rounded-l-full left-[15%] bottom-[2%]" aria-hidden="true"></div>
-                        <img src="/illustration-hero.fb8bedfb.svg" alt="" class="w-full h-full object-contain" aria-hidden="true">
+            <section id=hero class=mb-40>
+                <div class="flex flex-col gap-4 items-center justify-center lg:flex-row-reverse lg:justify-end px-16 py-6">
+                    <div class="aspect-[41/29] max-w-xl relative">
+                        <div class="background-illustration bottom-[2%] left-[15%] rounded-l-full" aria-hidden=true></div>
+                        <img src=/illustration-hero.64c753c2.svg alt class="h-full object-contain w-full" aria-hidden=true>
                     </div>
                     <div class="flex flex-col items-center justify-center lg:items-start lg:text-left">
-                        <h1 class="lg:max-w-md">a simple bookmark manager</h1>
-                        <p class="max-w-xl text-grayishBlue mb-6 text-lg leading-relaxed">
+                        <h1 class=lg:max-w-md>a simple bookmark manager</h1>
+                        <p class="leading-relaxed max-w-xl mb-6 text-grayishBlue text-lg">
                             Save, organize, and access your favorite links from
                             any device with a fast and simple bookmark manager.
                             Keep everything neatly structured, find what you
@@ -79,35 +54,35 @@
                     </div>
                 </div>
             </section>
-            <section id="features" class="mb-40">
-                <div class="relative py-6 px-16">
-                    <div class="background-illustration rounded-r-full right-[65%] bottom-0.5" aria-hidden="true"></div>
+            <section id=features class=mb-40>
+                <div class="px-16 py-6 relative">
+                    <div class="background-illustration bottom-0.5 right-[65%] rounded-r-full" aria-hidden=true></div>
                     <h2>features</h2>
-                    <p class="max-w-md mx-auto text-grayishBlue mb-6 leading-relaxed">
+                    <p class="leading-relaxed max-w-md mb-6 mx-auto text-grayishBlue">
                         Our aim is to make bookmark management simple and
                         efficient, helping you access your favorite websites
                         quickly and stay organized without effort.
                     </p>
-                    <div id="features-tabbed-component" class="">
-                        <div role="tablist" class="tabs-container max-w-2xl mx-auto">
-                            <button role="tab" aria-controls="tab-panel-1" aria-selected="true" id="tab-1" class="tab selected" data-target="tab-panel-1">
+                    <div id=features-tabbed-component>
+                        <div role=tablist class="max-w-2xl mx-auto tabs-container">
+                            <button role=tab aria-controls=tab-panel-1 aria-selected=true id=tab-1 class="selected tab" data-target=tab-panel-1>
                                 simple bookmarking
                             </button>
-                            <button role="tab" aria-controls="tab-panel-2" aria-selected="false" id="tab-2" class="tab" data-target="tab-panel-2">
+                            <button role=tab aria-controls=tab-panel-2 aria-selected=false id=tab-2 class=tab data-target=tab-panel-2>
                                 quick searching
                             </button>
-                            <button role="tab" aria-controls="tab-panel-3" aria-selected="false" id="tab-3" class="tab" data-target="tab-panel-3">
+                            <button role=tab aria-controls=tab-panel-3 aria-selected=false id=tab-3 class=tab data-target=tab-panel-3>
                                 easy sharing
                             </button>
                         </div>
                         <div class="max-w-7xl mx-auto">
-                            <div id="tab-panel-1" role="tabpanel" aria-labelledby="tab-1" class="tab-panel selected">
-                                <div class="w-96 aspect-[440/380]">
-                                    <img src="/illustration-features-tab-1.69c221b6.svg" alt="" class="w-full h-full object-contain" aria-hidden="true">
+                            <div id=tab-panel-1 role=tabpanel aria-labelledby=tab-1 class="selected tab-panel">
+                                <div class="aspect-[440/380] w-96">
+                                    <img src=/illustration-features-tab-1.2c907977.svg alt class="h-full object-contain w-full" aria-hidden=true>
                                 </div>
                                 <div>
-                                    <h3 class="mb-6">bookmark in one click</h3>
-                                    <p class="max-w-md mx-auto text-grayishBlue mb-6 leading-relaxed">
+                                    <h3 class=mb-6>bookmark in one click</h3>
+                                    <p class="leading-relaxed max-w-md mb-6 mx-auto text-grayishBlue">
                                         Organize your bookmarks effortlessly and
                                         access them with a single click. Keep
                                         everything in one place and enjoy a
@@ -115,13 +90,13 @@
                                     </p>
                                 </div>
                             </div>
-                            <div id="tab-panel-2" role="tabpanel" aria-labelledby="tab-2" class="tab-panel">
-                                <div class="w-96 aspect-[440/380]">
-                                    <img src="/illustration-features-tab-2.928e63cd.svg" alt="" class="w-full h-full object-contain" aria-hidden="true">
+                            <div id=tab-panel-2 role=tabpanel aria-labelledby=tab-2 class=tab-panel>
+                                <div class="aspect-[440/380] w-96">
+                                    <img src=/illustration-features-tab-2.0759c6c6.svg alt class="h-full object-contain w-full" aria-hidden=true>
                                 </div>
                                 <div>
-                                    <h3 class="mb-6">intelligent search</h3>
-                                    <p class="max-w-md mx-auto text-grayishBlue mb-6 leading-relaxed">
+                                    <h3 class=mb-6>intelligent search</h3>
+                                    <p class="leading-relaxed max-w-md mb-6 mx-auto text-grayishBlue">
                                         Quickly find saved sites with a powerful
                                         search that understands what you’re
                                         looking for. Filter, sort, and locate
@@ -130,14 +105,14 @@
                                     </p>
                                 </div>
                             </div>
-                            <div id="tab-panel-3" role="tabpanel" aria-labelledby="tab-3" class="tab-panel">
-                                <div class="w-96 aspect-[440/380]">
-                                    <img src="/illustration-features-tab-3.e5f1b419.svg" alt="" class="w-full h-full object-contain" aria-hidden="true">
+                            <div id=tab-panel-3 role=tabpanel aria-labelledby=tab-3 class=tab-panel>
+                                <div class="aspect-[440/380] w-96">
+                                    <img src=/illustration-features-tab-3.ca0c4d40.svg alt class="h-full object-contain w-full" aria-hidden=true>
                                 </div>
 
                                 <div>
-                                    <h3 class="mb-6">easy sharing</h3>
-                                    <p class="max-w-md mx-auto text-grayishBlue mb-6 leading-relaxed">
+                                    <h3 class=mb-6>easy sharing</h3>
+                                    <p class="leading-relaxed max-w-md mb-6 mx-auto text-grayishBlue">
                                         Share your bookmarks and collections
                                         with others in just a few clicks.
                                         Collaborate with your team or send links
@@ -149,40 +124,29 @@
                     </div>
                 </div>
             </section>
-            <section id="download" class="mb-40">
+            <section id=download class=mb-40>
                 <div class="max-w-4xl mx-auto px-16 py-6 text-center">
                     <h2>download the extension now</h2>
-                    <p class="max-w-xl mx-auto text-grayishBlue mb-6 text-lg leading-relaxed">
+                    <p class="leading-relaxed max-w-xl mb-6 mx-auto text-grayishBlue text-lg">
                         Add Bookmark to your browser in seconds and start
                         organizing your favorite sites with ease. Available on
                         all major browsers, it helps you stay productive
                         wherever you browse.
                     </p>
-                    <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 flex-wrap">
+                    <div class="flex flex-col flex-wrap gap-4 items-center justify-center md:flex-row md:gap-8">
                         <article class="card download-card">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon-large">
-                                <g fill="none">
-                                    <path fill="#E16B5A" d="M50.768.01s30.01-1.325 45.916 28.249H48.217s-9.154-.296-16.957 10.594c-2.25 4.561-4.65 9.27-1.95 18.538-3.9-6.472-20.708-35.164-20.708-35.164S20.457 1.186 50.768.009z"></path>
-                                    <path fill="#FFD464" d="M95.122 75.095S81.284 101.238 47.21 99.952C51.414 92.82 71.45 58.8 71.45 58.8s4.837-7.626-.875-19.696c-2.903-4.192-11.7-8.586-21.237-10.928 7.67-.075 47.25.005 47.25.005s12.653 20.59-1.466 46.915z"></path>
-                                    <path fill="#74B340" d="M6.628 75.294s-16.17-24.825 2.004-53.116l24.225 41.163s4.314 7.92 17.832 9.104c5.153-.368 10.514-.682 17.351-7.607C64.27 71.387 47.327 100 47.327 100s-24.51.448-40.7-24.706z"></path>
-                                    <ellipse cx="50.646" cy="50.406" fill="#FFF" rx="23.064" ry="22.656"></ellipse>
-                                    <ellipse cx="50.638" cy="50.406" fill="#2995CC" rx="18.292" ry="17.969"></ellipse>
-                                    <path fill="#268CBF" d="M50.643 32.441c-.364 0-.724.014-1.082.034 9.598.55 17.209 8.369 17.209 17.934 0 9.568-7.611 17.386-17.21 17.937.36.02.72.034 1.083.034 10.101 0 18.292-8.046 18.292-17.97 0-9.923-8.19-17.969-18.292-17.969z"></path>
-                                </g>
-                            </svg>
-                            <h3 class="text-grayishBlue">add to chrome</h3>
-                            <div class="hr-separator"></div>
-                            <a href="b883876f3096b23" class="btn btn-primary">
+                            <svg xmlns:xmlns=http://www.w3.org/2000/svg class=icon-large><g fill=none><path fill=#e16b5a d="M50.768.01s30.01-1.325 45.916 28.249H48.217s-9.154-.296-16.957 10.594c-2.25 4.561-4.65 9.27-1.95 18.538-3.9-6.472-20.708-35.164-20.708-35.164S20.457 1.186 50.768.009Z"/><path fill=#ffd464 d="M95.122 75.095S81.284 101.238 47.21 99.952C51.414 92.82 71.45 58.8 71.45 58.8s4.837-7.626-.875-19.696c-2.903-4.192-11.7-8.586-21.237-10.928 7.67-.075 47.25.005 47.25.005s12.653 20.59-1.466 46.915Z"/><path fill=#74b340 d="M6.628 75.294s-16.17-24.825 2.004-53.116l24.225 41.163s4.314 7.92 17.832 9.104c5.153-.368 10.514-.682 17.351-7.607C64.27 71.387 47.327 100 47.327 100s-24.51.448-40.7-24.706Z"/><ellipse cx=50.646 cy=50.406 fill=#fff rx=23.064 ry=22.656 /><ellipse cx=50.638 cy=50.406 fill=#2995cc rx=18.292 ry=17.969 /><path fill=#268cbf d="M50.643 32.441c-.364 0-.724.014-1.082.034 9.598.55 17.209 8.369 17.209 17.934 0 9.568-7.611 17.386-17.21 17.937.36.02.72.034 1.083.034 10.101 0 18.292-8.046 18.292-17.97s-8.19-17.969-18.292-17.969"/></g></svg>
+                            <h3 class=text-grayishBlue>add to chrome</h3>
+                            <div class=hr-separator></div>
+                            <a href=https://chromewebstore.google.com/ class="btn btn-primary">
                                 add and install extension
                             </a>
                         </article>
                         <article class="card download-card">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon-large">
-                                <path fill="#FF9800" d="M105 50c0 28.862-23.513 50-52.5 50S0 76.588 0 47.726c0-9.043 2.33-17.59 6.392-25a.995.995 0 0 1 .23-.366C4.338 18.956 3.334 10.318 9.128 4.541c0 2.411 1.464 6.548 3.104 9.638 1.326 2.457 2.737 4.228 3.741 4 2.284-.543 10.27-.543 11.412 0 1.877-2.405 6.445-9.09 13.703-9.09-4.062 4.045-15.704 18.185 4.567 18.185h4.568L36.52 36.363s1.556 3 0 4.548c-1.732-1.732-9.128 1.862-9.128 6.815s5.296 11.363 15.98 11.363c10.683 0 7.986-4.548 13.696-4.548 5.709 0 6.844 4.548 6.844 4.548-7.855 0-13.558 9.09-22.824 9.09 4.567 3.364 7.58 4.547 13.696 4.547 15.113 0 27.392-12.225 27.392-27.274 0-6.09-2.008-11.683-5.388-16.224a27.414 27.414 0 0 1 10.96 19.498 40.554 40.554 0 0 0 1.279-10.089c0-13.683-5.84-31.776-15.98-38.637C87.655 4.358 105 18.466 105 45.452V50z"></path>
-                            </svg>
-                            <h3 class="text-grayishBlue">add to firfox</h3>
-                            <div class="hr-separator"></div>
-                            <a href="2822517c3efd02bc" class="btn btn-secondary">
+                            <svg xmlns:xmlns=http://www.w3.org/2000/svg class=icon-large><path fill=#ff9800 d="M105 50c0 28.862-23.513 50-52.5 50S0 76.588 0 47.726c0-9.043 2.33-17.59 6.392-25a1 1 0 0 1 .23-.366C4.338 18.956 3.334 10.318 9.128 4.541c0 2.411 1.464 6.548 3.104 9.638 1.326 2.457 2.737 4.228 3.741 4C18.257 17.636 26.243 17.636 27.385 18.179c1.877-2.405 6.445-9.09 13.703-9.09-4.062 4.045-15.704 18.185 4.567 18.185h4.568L36.52 36.363s1.556 3 0 4.548c-1.732-1.732-9.128 1.862-9.128 6.815s5.296 11.363 15.98 11.363c10.683 0 7.986-4.548 13.696-4.548s6.844 4.548 6.844 4.548c-7.855 0-13.558 9.09-22.824 9.09 4.567 3.364 7.58 4.547 13.696 4.547 15.113 0 27.392-12.225 27.392-27.274 0-6.09-2.008-11.683-5.388-16.224a27.41 27.41 0 0 1 10.96 19.498 40.6 40.6 0 0 0 1.279-10.089c0-13.683-5.84-31.776-15.98-38.637C87.655 4.358 105 18.466 105 45.452Z"/></svg>
+                            <h3 class=text-grayishBlue>add to firfox</h3>
+                            <div class=hr-separator></div>
+                            <a href=https://addons.mozilla.org/ class="btn btn-secondary">
                                 add and install extension
                             </a>
                         </article>
@@ -190,18 +154,18 @@
                 </div>
             </section>
 
-            <section id="faq" class="mb-40">
+            <section id=faq class=mb-40>
                 <div class="max-w-4xl mx-auto px-4 py-6">
                     <h2>frequently asked questions</h2>
-                    <p class="max-w-lg mx-auto text-grayishBlue text-lg mb-10 leading-relaxed">
+                    <p class="leading-relaxed max-w-lg mb-10 mx-auto text-grayishBlue text-lg">
                         here are some frequently asked questions, please don't
                         hesitate if you have any other questions, contact us at
                         your convenience.
                     </p>
-                    <div id="faq-accordion-component" class="md:text-left">
-                        <div id="mb-8" class="accordion-item">
-                            <h3 class="">
-                                <button id="accordion-btn-1" aria-controls="accordion-panel-1" aria-expanded="true" class="btn accordion-btn">
+                    <div id=faq-accordion-component class=md:text-left>
+                        <div id=mb-8 class=accordion-item>
+                            <h3>
+                                <button id=accordion-btn-1 aria-controls=accordion-panel-1 aria-expanded=true class="accordion-btn btn">
                                     <span>
                                         01
                                         <span class="font-normal ml-2">
@@ -209,13 +173,11 @@
                                             work?
                                         </span>
                                     </span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon-extra-small arrow-icon">
-                                        <path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
+                                    <svg xmlns:xmlns=http://www.w3.org/2000/svg class="arrow-icon icon-extra-small" viewBox="0 0 20 20"><path fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=3 d="m1 1 8 8 8-8"/></svg>
                                 </button>
                             </h3>
-                            <div id="accordion-panel-1" aria-labelledby="accordion-btn-1" class="accordion-panel">
-                                <p class="text-grayishBlue leading-relaxed">
+                            <div id=accordion-panel-1 aria-labelledby=accordion-btn-1 class=accordion-panel>
+                                <p class="leading-relaxed text-grayishBlue">
                                     Bookmark is a simple browser extension that
                                     helps you save, organize, and access your
                                     favorite websites in one place. With a
@@ -225,22 +187,20 @@
                                 </p>
                             </div>
                         </div>
-                        <div id="mb-8" class="accordion-item">
-                            <h3 class="text-xs md:text-base lg:text-xl">
-                                <button id="accordion-btn-2" aria-controls="accordion-panel-2" aria-expanded="false" class="btn accordion-btn">
+                        <div id=mb-8 class=accordion-item>
+                            <h3 class="lg:text-xl md:text-base text-xs">
+                                <button id=accordion-btn-2 aria-controls=accordion-panel-2 aria-expanded=false class="accordion-btn btn">
                                     <span>
                                         02
                                         <span class="font-normal ml-2">
                                             is there a mobile version available?
                                         </span>
                                     </span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon-extra-small arrow-icon">
-                                        <path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
+                                    <svg xmlns:xmlns=http://www.w3.org/2000/svg class="arrow-icon icon-extra-small" viewBox="0 0 20 20"><path fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=3 d="m1 1 8 8 8-8"/></svg>
                                 </button>
                             </h3>
-                            <div id="accordion-panel-2" aria-labelledby="accordion-btn-2" class="accordion-panel">
-                                <p class="text-grayishBlue leading-relaxed">
+                            <div id=accordion-panel-2 aria-labelledby=accordion-btn-2 class=accordion-panel>
+                                <p class="leading-relaxed text-grayishBlue">
                                     Our extension is designed primarily for
                                     desktop browsers, but you can still access
                                     your bookmarks on mobile devices through
@@ -249,9 +209,9 @@
                             </div>
                         </div>
 
-                        <div id="mb-8" class="accordion-item">
-                            <h3 class="text-xs md:text-base lg:text-xl">
-                                <button id="accordion-btn-3" aria-controls="accordion-panel-3" aria-expanded="false" class="btn accordion-btn">
+                        <div id=mb-8 class=accordion-item>
+                            <h3 class="lg:text-xl md:text-base text-xs">
+                                <button id=accordion-btn-3 aria-controls=accordion-panel-3 aria-expanded=false class="accordion-btn btn">
                                     <span>
                                         03
                                         <span class="font-normal ml-2">
@@ -259,13 +219,11 @@
                                             devices?
                                         </span>
                                     </span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon-extra-small arrow-icon">
-                                        <path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
+                                    <svg xmlns:xmlns=http://www.w3.org/2000/svg class="arrow-icon icon-extra-small" viewBox="0 0 20 20"><path fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=3 d="m1 1 8 8 8-8"/></svg>
                                 </button>
                             </h3>
-                            <div id="accordion-panel-3" aria-labelledby="accordion-btn-3" class="accordion-panel">
-                                <p class="text-grayishBlue leading-relaxed">
+                            <div id=accordion-panel-3 aria-labelledby=accordion-btn-3 class=accordion-panel>
+                                <p class="leading-relaxed text-grayishBlue">
                                     Yes, your bookmarks are securely synced
                                     across all your devices, so you can access
                                     them anytime, anywhere without losing your
@@ -274,22 +232,20 @@
                             </div>
                         </div>
 
-                        <div id="mb-8" class="accordion-item">
-                            <h3 class="text-xs md:text-base lg:text-xl">
-                                <button id="accordion-btn-4" aria-controls="accordion-panel-4" aria-expanded="false" class="btn accordion-btn">
+                        <div id=mb-8 class=accordion-item>
+                            <h3 class="lg:text-xl md:text-base text-xs">
+                                <button id=accordion-btn-4 aria-controls=accordion-panel-4 aria-expanded=false class="accordion-btn btn">
                                     <span>
                                         04
                                         <span class="font-normal ml-2">
                                             how secure is my bookmark data?
                                         </span>
                                     </span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="icon-extra-small arrow-icon">
-                                        <path fill="none" stroke="currentColor" stroke-width="3" d="M1 1l8 8 8-8" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
+                                    <svg xmlns:xmlns=http://www.w3.org/2000/svg class="arrow-icon icon-extra-small" viewBox="0 0 20 20"><path fill=none stroke=currentColor stroke-linecap=round stroke-linejoin=round stroke-width=3 d="m1 1 8 8 8-8"/></svg>
                                 </button>
                             </h3>
-                            <div id="accordion-panel-4" aria-labelledby="accordion-btn-4" class="accordion-panel">
-                                <p class="text-grayishBlue leading-relaxed">
+                            <div id=accordion-panel-4 aria-labelledby=accordion-btn-4 class=accordion-panel>
+                                <p class="leading-relaxed text-grayishBlue">
                                     We prioritize your privacy by keeping your
                                     data secure and encrypted. Your bookmarks
                                     are stored safely, and we never share your
@@ -301,45 +257,34 @@
                 </div>
             </section>
         </main>
-        <footer id="footer" class="bg-veryDarkBlue">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-items-center px-6 py-16 text-white">
-                <h2 class="sr-only">footer</h2>
-                <svg xmlns="http://www.w3.org/2000/svg" class="logo text-white" id="logo">
-                    <g fill="none" fill-rule="evenodd">
-                        <path d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z" fill="currentColor" fill-rule="nonzero"></path>
-                        <g>
-                            <circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5"></circle>
-                            <path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#FFF"></path>
-                        </g>
-                    </g>
-                </svg>
+        <footer id=footer class=bg-veryDarkBlue>
+            <div class="gap-8 grid grid-cols-1 items-center justify-items-center md:grid-cols-3 px-6 py-16 text-white">
+                <h2 class=sr-only>footer</h2>
+                <svg xmlns:xmlns=http://www.w3.org/2000/svg id=logo class="logo text-white"><g fill=none fill-rule=evenodd><path fill=currentColor fill-rule=nonzero d="M37 6.299h5.227q1.12 0 2.062.466.943.467 1.484 1.27c.541.803.542 1.12.542 1.754q0 1.008-.495 1.746t-1.297 1.129v.15q1.045.372 1.661 1.185.615.812.616 1.95 0 1.102-.588 1.951a3.8 3.8 0 0 1-1.587 1.307q-.998.457-2.212.457H37Zm5.04 5.45q.822 0 1.316-.457.495-.458.495-1.148 0-.672-.476-1.13-.477-.457-1.26-.457H39.52v3.192Zm.28 5.619q.915 0 1.428-.476t.513-1.241-.522-1.251q-.523-.486-1.494-.485H39.52v3.453Zm12.927 2.595q-1.96 0-3.556-.924a6.7 6.7 0 0 1-2.511-2.53q-.915-1.605-.915-3.528t.915-3.528a6.7 6.7 0 0 1 2.51-2.529Q53.288 6 55.248 6t3.556.924a6.7 6.7 0 0 1 2.51 2.53q.915 1.605.915 3.527t-.915 3.528a6.7 6.7 0 0 1-2.51 2.53q-1.597.924-3.556.924Zm0-2.39a4.5 4.5 0 0 0 2.258-.578 4.2 4.2 0 0 0 1.615-1.624q.588-1.046.588-2.39t-.588-2.389a4.2 4.2 0 0 0-1.615-1.624 4.5 4.5 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.2 4.2 0 0 0-1.605 1.624q-.588 1.045-.588 2.39 0 1.343.588 2.389a4.2 4.2 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578m15.353 2.39q-1.96 0-3.556-.924a6.7 6.7 0 0 1-2.51-2.53q-.915-1.605-.915-3.528t.914-3.528a6.7 6.7 0 0 1 2.511-2.529Q68.64 6 70.6 6t3.556.924a6.7 6.7 0 0 1 2.51 2.53q.915 1.605.915 3.527t-.914 3.528a6.7 6.7 0 0 1-2.511 2.53q-1.596.924-3.556.924m0-2.39a4.5 4.5 0 0 0 2.259-.578 4.2 4.2 0 0 0 1.614-1.624q.588-1.046.588-2.39t-.588-2.389a4.2 4.2 0 0 0-1.614-1.624 4.5 4.5 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.2 4.2 0 0 0-1.605 1.624q-.588 1.045-.588 2.39 0 1.343.588 2.389a4.2 4.2 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578M79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299ZM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483Zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781Zm3.193 7.859-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49ZM124.553 6h4.872q1.307 0 2.324.541a3.9 3.9 0 0 1 1.577 1.503q.56.96.56 2.175 0 1.287-.812 2.286a4.6 4.6 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52Zm4.853 6.03q.86 0 1.4-.523.542-.523.542-1.326 0-.765-.514-1.306t-1.39-.542h-2.371v3.696Zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52Z"/><circle cx=12.5 cy=12.5 r=12.5 fill=#5267df /><path fill=#fff d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2"/></g></svg>
                 <nav aria-label="footer navigation">
-                    <ul class="flex flex-col md:flex-row items-center justify-center gap-1 md:gap-8 md:text-xl lg:text-2xl">
+                    <ul class="flex flex-col gap-1 items-center justify-center lg:text-2xl md:flex-row md:gap-8 md:text-xl">
                         <li>
-                            <a href="#features" class="hover-link">features</a>
+                            <a href=#features class=hover-link>features</a>
                         </li>
                         <li>
-                            <a href="#download" class="hover-link">downlaod</a>
+                            <a href=#download class=hover-link>downlaod</a>
                         </li>
                         <li>
-                            <a href="#faq" class="hover-link">FAQ</a>
+                            <a href=#faq class=hover-link>FAQ</a>
                         </li>
                     </ul>
                 </nav>
-                <nav aria-labelledby="social-links">
-                    <h3 class="sr-only" id="social-links">social links</h3>
+                <nav aria-labelledby=social-links>
+                    <h3 class=sr-only id=social-links>social links</h3>
                     <ul class="flex flex-row gap-4">
                         <li>
-                            <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="icon-small icon-colored" aria-hidden="true">
-                                    <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path></svg></a>
+                            <a href=# aria-label=Instagram><svg xmlns:xmlns=http://www.w3.org/2000/svg aria-hidden=true class="icon-colored icon-small"><path fill=currentColor d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849s-.012 3.584-.069 4.849c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069M12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12s.014 3.668.072 4.948c.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24s3.668-.014 4.948-.072c4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0m0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324M12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8m6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881"/></svg></a>
                         </li>
                         <li>
-                            <a href="#" aria-label="Pinterest"><svg xmlns="http://www.w3.org/2000/svg" class="icon-small icon-colored" aria-hidden="true">
-                                    <path fill="currentColor" d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"></path></svg></a>
+                            <a href=# aria-label=Pinterest><svg xmlns:xmlns=http://www.w3.org/2000/svg aria-hidden=true class="icon-colored icon-small"><path fill=currentColor d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12"/></svg></a>
                         </li>
                         <li>
-                            <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" class="icon-small icon-colored" aria-hidden="true">
-                                    <path fill="currentColor" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"></path></svg></a>
+                            <a href=# aria-label=Facebook><svg xmlns:xmlns=http://www.w3.org/2000/svg aria-hidden=true class="icon-colored icon-small"><path fill=currentColor d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0"/></svg></a>
                         </li>
                     </ul>
                 </nav>
@@ -347,4 +292,3 @@
         </footer>
     
 
-<script src="/bookmark-manager.3464ddca.js"></script></body></html>

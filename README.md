@@ -20,7 +20,7 @@ Each project focuses on clean layout, responsive design (mobile-first approach),
 
 - Build real-world responsive landing page layouts using Tailwind CSS
 - Practice modern UI best practices and patterns
-- Keep components reusable and consistent
+- Implement different UI components and keep them reusable and consistent
 - Maintain clean and readable utility usage
 
 ---
@@ -75,17 +75,24 @@ https://fylo-fawzi.netlify.app
 
 ### 6. Bookmark Manager
 
+A modern, responsive landing page for a bookmark manager browser extension, built with a focus on clean UI, fluid layouts, and interactive components. Featuring a tabbed component for features, accordion component for FAQ section, and a dynamic hamburger navigation menu with backdrop blur effects. It includes carefully crafted hover, focus, and active states, along with a consistent color system and smooth transitions to enhance user experience.
+
 #### Live demo
+
+https://bookmark-manager-fawzi.netlify.app
 
 ---
 
 ## Notes
 
 - All projects are built with a mobile-first approach
+- All projects are designed with accessibility in mind, using semantic HTML, proper ARIA attributes, and 
+  clear focus states to ensure a usable experience for all users.
 - Layouts are fluid rely primarily on Flexbox and Grid
 - Focus on clean spacing, alignment, and visual hierarchy
 - Minimal custom CSS, Tailwind utilities are preferred
-- JavaScript is used only where necessary (e.g., toggles, menus, small interactions)
+- JavaScript is used where necessary (e.g., toggles (accordion and tabbed components), menus, small 
+  interactions, etc.)
 - The dist folder is intentionally included in each project for reference and is excluded from .gitignore
   on purpose.
 
