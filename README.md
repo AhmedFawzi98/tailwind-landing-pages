@@ -59,7 +59,11 @@ https://shortly-fawzi.netlify.app/
 
 ### 4. Testimonials
 
+A responsive testimonials grid combined with layered visual elements like decorative quotation marks, with screen size based text clamping and “See more / See less” functionality, ensuring content remains readable across screen sizes while maintaining a polished and consistent user experience.
+
 #### Live demo
+
+https://testimonials-fawzi.netlify.app/
 
 ---
 
