@@ -57,7 +57,7 @@ https://shortly-fawzi.netlify.app/
 
 ---
 
-### 4. Testimonial Grid
+### 4. Testimonials
 
 #### Live demo
 
@@ -86,12 +86,12 @@ https://bookmark-manager-fawzi.netlify.app
 ## Notes
 
 - All projects are built with a mobile-first approach
-- All projects are designed with accessibility in mind, using semantic HTML, proper ARIA attributes, and 
+- All projects are designed with accessibility in mind, using semantic HTML, proper ARIA attributes, and
   clear focus states to ensure a usable experience for all users.
 - Layouts are fluid rely primarily on Flexbox and Grid
 - Focus on clean spacing, alignment, and visual hierarchy
 - Minimal custom CSS, Tailwind utilities are preferred
-- JavaScript is used where necessary (e.g., toggles (accordion and tabbed components), menus, small 
+- JavaScript is used where necessary (e.g., toggles (accordion and tabbed components), menus, small
   interactions, etc.)
 - The dist folder is intentionally included in each project for reference and is excluded from .gitignore
   on purpose.

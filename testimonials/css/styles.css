@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :where(button, a, input, textarea, select):focus-visible {
+        @apply outline-none ring-2 ring-cyan ring-offset-2 ring-offset-cyanLight;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-semibold capitalize;
+    }
+    h1 {
+        @apply mb-8 text-3xl lg:text-4xl xl:text-5xl font-bold uppercase;
+    }
+    h2 {
+        @apply mb-6 text-3xl lg:text-4xl;
+    }
+    h3 {
+        @apply mb-2 text-xl lg:text-2xl;
+    }
+    a {
+        @apply capitalize;
+    }
+}
+
+@layer components {
+    .icon-large {
+        @apply w-32 h-32;
+    }
+    .icon-medium {
+        @apply w-12 h-12;
+    }
+    .icon-small {
+        @apply w-8 h-8;
+    }
+
+    .btn {
+        @apply px-8 py-3 inline-block capitalize cursor-pointer rounded-lg font-semibold transition-all duration-500 hover:shadow-md hover:shadow-black/10 active:shadow-none;
+    }
+    .btn-primary {
+        @apply text-white bg-cyan  hover:bg-cyanDark;
+    }
+    .btn-secondary {
+        @apply text-black bg-white hover:bg-grayishVioletLight hover:text-white;
+    }
+
+    .btn-container {
+        @apply flex flex-col md:flex-row justify-center items-center gap-2 text-xl;
+    }
+
+    .card {
+        @apply rounded-lg bg-white shadow-md shadow-black/20 p-4;
+    }
+    .testimonial-card {
+        @apply flex flex-col items-center justify-center gap-4 md:flex-row md:justify-between md:gap-0;
+    }
+}
